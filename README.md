@@ -21,3 +21,13 @@ The buttons of the lower row are only enabled if a device is selected.
 
 The report to be written is entered in hex digits in the edit boxes.
 Empty edit boxes are automatically filled with `00`.
+
+## Updates by benbaker76
+
+- Allow reports larger than 64 bytes
+- Fixed an error when re-connecting a device (which previously required a restart of the app)
+- Made the window larger to accommodate for the larger reports
+
+Thanks to the original author of this tool.
+
+![](/images/SimpleHIDWrite3.png)

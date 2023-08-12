@@ -1,13 +1,13 @@
 object MainForm: TMainForm
-  Left = 196
-  Top = 123
+  Left = 192
+  Top = 116
   AutoScroll = False
-  Caption = 'SimpleHIDWrite3'
-  ClientHeight = 627
-  ClientWidth = 879
+  Caption = 'SimpleHIDWrite - a HID utility'
+  ClientHeight = 516
+  ClientWidth = 521
   Color = clBtnFace
-  Constraints.MinHeight = 666
-  Constraints.MinWidth = 895
+  Constraints.MinHeight = 500
+  Constraints.MinWidth = 450
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -13
@@ -17,13 +17,13 @@ object MainForm: TMainForm
   Position = poScreenCenter
   OnActivate = FormActivate
   DesignSize = (
-    879
-    627)
+    521
+    516)
   PixelsPerInch = 96
   TextHeight = 16
   object WriteBtn: TSpeedButton
-    Left = 400
-    Top = 594
+    Left = 8
+    Top = 483
     Width = 81
     Height = 22
     AllowAllUp = True
@@ -33,8 +33,8 @@ object MainForm: TMainForm
     OnClick = WriteBtnClick
   end
   object SaveBtn: TSpeedButton
-    Left = 112
-    Top = 594
+    Left = 104
+    Top = 451
     Width = 81
     Height = 22
     AllowAllUp = True
@@ -44,15 +44,15 @@ object MainForm: TMainForm
   end
   object Label1: TLabel
     Left = 41
-    Top = 355
-    Width = 412
+    Top = 300
+    Width = 54
     Height = 16
     Anchors = [akLeft, akRight, akBottom]
     Caption = 'ReportID'
   end
   object InfoBtn: TSpeedButton
-    Left = 16
-    Top = 594
+    Left = 8
+    Top = 451
     Width = 81
     Height = 22
     Anchors = [akLeft, akBottom]
@@ -60,8 +60,8 @@ object MainForm: TMainForm
     OnClick = InfoBtnClick
   end
   object ClearBtn: TSpeedButton
-    Left = 304
-    Top = 594
+    Left = 296
+    Top = 451
     Width = 81
     Height = 22
     AllowAllUp = True
@@ -70,8 +70,8 @@ object MainForm: TMainForm
     OnClick = ClearBtnClick
   end
   object GetReportBtn: TSpeedButton
-    Left = 496
-    Top = 594
+    Left = 104
+    Top = 483
     Width = 81
     Height = 22
     AllowAllUp = True
@@ -81,8 +81,8 @@ object MainForm: TMainForm
     OnClick = GetReportBtnClick
   end
   object SetReportBtn: TSpeedButton
-    Left = 592
-    Top = 594
+    Left = 200
+    Top = 483
     Width = 81
     Height = 22
     AllowAllUp = True
@@ -92,8 +92,8 @@ object MainForm: TMainForm
     OnClick = SetReportBtnClick
   end
   object GetFeatureBtn: TSpeedButton
-    Left = 688
-    Top = 594
+    Left = 296
+    Top = 483
     Width = 81
     Height = 22
     AllowAllUp = True
@@ -103,8 +103,8 @@ object MainForm: TMainForm
     OnClick = GetFeatureBtnClick
   end
   object SetFeatureBtn: TSpeedButton
-    Left = 784
-    Top = 594
+    Left = 392
+    Top = 483
     Width = 81
     Height = 22
     AllowAllUp = True
@@ -114,8 +114,8 @@ object MainForm: TMainForm
     OnClick = SetFeatureBtnClick
   end
   object PlaybackBtn: TSpeedButton
-    Left = 208
-    Top = 594
+    Left = 200
+    Top = 451
     Width = 81
     Height = 22
     AllowAllUp = True
@@ -126,8 +126,8 @@ object MainForm: TMainForm
   object DevListBox: TListBox
     Left = -1
     Top = 0
-    Width = 879
-    Height = 169
+    Width = 521
+    Height = 81
     Anchors = [akLeft, akTop, akRight]
     ItemHeight = 16
     TabOrder = 0
@@ -135,9 +135,9 @@ object MainForm: TMainForm
   end
   object HistoryListBox: TListBox
     Left = 0
-    Top = 176
-    Width = 879
-    Height = 169
+    Top = 84
+    Width = 521
+    Height = 206
     Anchors = [akLeft, akTop, akRight, akBottom]
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
@@ -151,7 +151,7 @@ object MainForm: TMainForm
   end
   object ReportID: TEdit
     Left = 8
-    Top = 351
+    Top = 296
     Width = 25
     Height = 24
     Anchors = [akLeft, akBottom]
@@ -159,7 +159,7 @@ object MainForm: TMainForm
   end
   object Edit1: TEdit
     Left = 8
-    Top = 383
+    Top = 328
     Width = 25
     Height = 24
     Anchors = [akLeft, akBottom]

@@ -11,7 +11,7 @@ type
 
   TReport = packed record
     ReportID: Byte;
-    Bytes: array [0..255] of Byte;
+    Bytes: array [0..63] of Byte;
   end;
 
   TMainForm = class(TForm)
@@ -39,7 +39,6 @@ type
     procedure HidCtlDeviceDataError(HidDev: TJvHidDevice; Error: Cardinal);
     procedure HidCtlArrival(HidDev: TJvHidDevice);
     procedure HidCtlRemoval(HidDev: TJvHidDevice);
-    procedure RemoveCurrentDevice();
     procedure DevListBoxClick(Sender: TObject);
     procedure InfoBtnClick(Sender: TObject);
     procedure SaveBtnClick(Sender: TObject);
@@ -53,7 +52,7 @@ type
     procedure HistoryListBoxDblClick(Sender: TObject);
   public
     Activated: Boolean;
-    Edits: array [0..255] of TEdit;
+    Edits: array [0..63] of TEdit;
     CurrentDevice: TJvHidDevice;
     function DeviceName(HidDev: TJvHidDevice): string;
     procedure ShowRead(HidDev: TJvHidDevice; ReportID: Byte; const Data: Pointer; Size: Word);
@@ -74,26 +73,26 @@ uses
 
 procedure TMainForm.FormActivate(Sender: TObject);
 var
-  X, Y: Integer;
+  I, J: Integer;
 begin
   if not Activated then
   begin
     Activated := True;
     Edits[0] := Edit1;
-    for X := 1 to High(Edits) do
-      Edits[X] := TEdit.Create(Self);
-    for Y := 0 to 7 do
-      for X := 0 to 31 do
-        with Edits[Y*32 + X] do
+    for I := 1 to High(Edits) do
+      Edits[I] := TEdit.Create(Self);
+    for J := 0 to 3 do
+      for I := 0 to 15 do
+        with Edits[J*16 + I] do
         begin
           Visible  := False;
-          Left     := Edit1.Left + X*(Edit1.Width+2);
-          Top      := Edit1.Top  + Y*(Edit1.Height+2);
+          Left     := Edit1.Left + I*(Edit1.Width+2);
+          Top      := Edit1.Top  + J*(Edit1.Height+2);
           Width    := Edit1.Width;
           Anchors  := Edit1.Anchors;
           if not Assigned(Parent) then
             Parent := Edit1.Parent;
-          TabOrder := Edit1.TabOrder + Y*32 + X;
+          TabOrder := Edit1.TabOrder + J*16 + I;
         end;
     DevListBoxClick(Self);
   end;
@@ -144,7 +143,10 @@ begin
   Result := True;
 end;
 
-procedure TMainForm.RemoveCurrentDevice;
+procedure TMainForm.DevListBoxClick(Sender: TObject);
+var
+  I: Integer;
+  Dev: TJvHidDevice;
 begin
   // stop reader thread
   if Assigned(CurrentDevice) then
@@ -154,14 +156,6 @@ begin
   SetReportBtn.Enabled := False;
   GetFeatureBtn.Enabled := False;
   SetFeatureBtn.Enabled := False;
-end;
-
-procedure TMainForm.DevListBoxClick(Sender: TObject);
-var
-  I: Integer;
-  Dev: TJvHidDevice;
-begin
-  RemoveCurrentDevice();
   if (DevListBox.Items.Count > 0) and (DevListBox.ItemIndex >= 0) then
   begin
     Dev := TJvHidDevice(DevListBox.Items.Objects[DevListBox.ItemIndex]);
@@ -218,11 +212,6 @@ end;
 procedure TMainForm.HidCtlRemoval(HidDev: TJvHidDevice);
 begin
   AddToHistory('Removal of ' + DeviceName(HidDev));
-
-  if (CurrentDevice = HidDev) then
-  begin
-     RemoveCurrentDevice();
-  end;
 end;
 
 procedure TMainForm.InfoBtnClick(Sender: TObject);
@@ -346,7 +335,7 @@ end;
 procedure TMainForm.WriteBtnClick(Sender: TObject);
 var
   I: Integer;
-  Buf: array [0..256] of Byte;
+  Buf: array [0..64] of Byte;
   Written: Cardinal;
   ToWrite: Cardinal;
   Str: string;
@@ -380,7 +369,7 @@ end;
 procedure TMainForm.GetReportBtnClick(Sender: TObject);
 var
   I: Integer;
-  Buf: array [0..256] of Byte;
+  Buf: array [0..64] of Byte;
   Str: string;
   Err: DWORD;
 begin
@@ -406,7 +395,7 @@ end;
 procedure TMainForm.SetReportBtnClick(Sender: TObject);
 var
   I: Integer;
-  Buf: array [0..256] of Byte;
+  Buf: array [0..64] of Byte;
   Str: string;
   Err: DWORD;
 begin
@@ -437,7 +426,7 @@ end;
 procedure TMainForm.GetFeatureBtnClick(Sender: TObject);
 var
   I: Integer;
-  Buf: array [0..256] of Byte;
+  Buf: array [0..64] of Byte;
   Str: string;
   Err: DWORD;
 begin
@@ -463,7 +452,7 @@ end;
 procedure TMainForm.SetFeatureBtnClick(Sender: TObject);
 var
   I: Integer;
-  Buf: array [0..256] of Byte;
+  Buf: array [0..64] of Byte;
   Str: string;
   Err: DWORD;
 begin
