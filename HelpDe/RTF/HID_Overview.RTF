@@ -1,0 +1,35 @@
+{\rtf1\ansi{\fonttbl{\f0\fswiss Courier New;}{\f1\fswiss Arial;}{\f2\fswiss Wingdings;}{\f3\fswiss MS Sans Serif;}}{\colortbl\red0\green0\blue196;\red0\green0\blue255;}\sa50\sb50\f3\fs20
+#{\footnote # Robert_Marquardt}
+${\footnote $ Robert Marquardt}
+>{\footnote > main}
+\sa50\sb50
+{\keepn{\{bml usb.bmp\}\f1\fs28\cf1\b   Autor der HID-Komponente\b0}\par\pard}
+\{bmr Robert.bmp\}
+{\fs24\b Robert Martin Marquardt\b0\line\line
+geboren am 1. Februar 1961\line
+lebt in Berlin, Deutschland\line
+ohne Frau und Kind\line
+Mitglied von Project JEDI seit Ende 1999 (http://delphi-jedi.org)}
+\par\page
+
+#{\footnote # IDH_Library_HID}
+${\footnote $ HID - Overview}
+>{\footnote > main}
+\sa50\sb50
+{\keepn{\{bml usb.bmp\}\f1\fs28\cf1\b   Human Interface Device Komponente\b0}\par\pard}
+Die HID Komponente ermöglicht den kompletten Zugriff auf HID-Geräte unter Windows 98, 98 SE, 98 ME, Windows 2000 und XP.\line
+Ein HID-Gerät ist eine Klasse von USB-Geräten mit denen man interagieren kann. 
+Mäuse und Tastaturen sind HID-Geräte. Ein USB-Hub hingegen nicht, da er funktioniert 
+ohne das man ihn anfassen muß. 
+Einige Nicht-USB-Geräte lassen sich mit einem Legacy-Treiber in HID integrieren.\par
+
+Das zentrale Feature von USB ist seine Hotplug-Fähigkeit. Konsequenterweise ist die HID-Komponente 
+eine Controller-Komponente, die das Ein- und Ausstecken von Geräten überwacht. Man braucht pro Programm also 
+nur eine Instanz der {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}-Komponente. 
+Jedes eingesteckte HID-Gerät wird durch ein {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}-Objekt 
+repräsentiert. Diese werden vom Controller-Objekt erzeugt und verwaltet. Windows versendet die Message 
+WM_DEVICECHANGE wenn sich etwas bei den Geräten verändert. Die Komponente erneuert daraufhin 
+seine Liste der Geräte und erzeugt neue Geräte-Objekte wenn nötig.\par
+
+Man kann nun den Controller nach einem Geräte-Objekt fragen, es benutzen und nach der Benutzung wieder zurückgeben.\page
+}

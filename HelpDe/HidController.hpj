@@ -1,0 +1,22 @@
+; This file is maintained by HCW. Do not modify this file directly.
+
+[OPTIONS]
+COMPRESS=12 Hall Zeck
+LCID=0x409 0x0 0x0 ; Englisch (USA)
+REPORT=Yes
+TITLE=HID
+CNT=HidController.cnt
+COPYRIGHT=Kompletter Zugriff auf HID von Project JEDI http://delphi-jedi.org
+BMROOT=..\HelpEn\BMP
+HLP=.\HIDController.hlp
+
+[FILES]
+RTF\HID_Overview.RTF
+RTF\HidController.RTF
+
+[WINDOWS]
+main="Human Interface Device Komponente",(480,300,540,530),27908,,(r12632256),f2
+pme="Properties, Methoden und Events",(200,300,275,512),4,(r14876671),(r12632256),f2
+
+[CONFIG]
+BrowseButtons()

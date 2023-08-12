@@ -1,0 +1,2220 @@
+{\rtf1\ansi{\fonttbl{\f0\fswiss Courier New;}{\f1\fswiss Arial;}{\f2\fswiss Wingdings;}{\f3\fswiss MS Sans Serif;}}{\colortbl\red0\green0\blue196;\red100\green0\blue255;\red0\green0\blue255;}
+\sa50\sb50\f3\fs20
+#{\footnote # IDH_Class_TJvHidDevice}
+${\footnote $ TJvHidDevice}
+K{\footnote K TJvHidDevice}
+A{\footnote A TJvHidDevice_Object;TJvHidDevice}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50
+{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\f1\fs28  \cf2 TJvHidDevice Object}\line
+{\fs20{\ul Hierarchie\v IDH_Anym_3FAMT_1}    {\uldb Properties\v pme_cp_TJvHidDevice>pme}   {\uldb Methoden\v pme_cm_TJvHidDevice>pme}   {\uldb Events\v pme_ce_TJvHidDevice>pme}\tab{\uldb Hilfsfunktionen\v pme_ce_Utilities>pme}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 TJvHidDevice = \b class\b0 (TObject)}\par\pard\sa0\sb0
+{#{\footnote # IDH_ClassTopic_TJvHidDevice_Properties}}
+Ein TJvHidDevice Objekt repräsentiert ein physisches HID-Gerät. Die statischen Informationen 
+des Geräts werden größtenteils in die Properties eingelesen. Das Objekt wird vom 
+{\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController>Main} erzeugt, der alle HID-Objekte 
+verwaltet.\par\page
+
+#{\footnote # pme_cp_TJvHidDevice}
+${\footnote $ Properties von TJvHidDevice}
++{\footnote + Auto}
+\sa50\sb50
+{\keepn{\f1\fs20\cf2\b{\uldb TJvHidDevice\v IDH_Class_TJvHidDevice>Main} Properties\b0}\line
+{\fs20{\ul Legende\v IDH_Legend}}\par\pard}
+{\f1\tx300\b In TJvHidDevice\b0\line
+\{bmct readonly.bmp\}\tab{\uldb Attributes\v IDH_TJvHidDevice_Attributes>Main}\line
+\{bmct readonly.bmp\}\tab{\uldb Caps\v IDH_TJvHidDevice_Caps>Main}\line
+\{bmct empty.bmp\}\tab{\uldb Configuration\v IDH_TJvHidDevice_Configuration>Main}\line
+\{bmct readonly.bmp\}\tab{\uldb DeviceStrings\v IDH_TJvHidDevice_DeviceStrings>Main}\line
+\{bmct readonly.bmp\}\tab{\uldb DeviceStringsUnicode\v IDH_TJvHidDevice_DeviceStringsUnicode>Main}\line
+\{bmct readonly.bmp\}\tab{\uldb HasReadWriteAccess\v IDH_TJvHidDevice_HasReadWriteAccess>Main}\line
+\{bmct readonly.bmp\}\tab{\uldb HidFileHandle\v IDH_TJvHidDevice_HidFileHandle>Main}\line
+\{bmct readonly.bmp\}\tab{\uldb HidOverlappedRead\v IDH_TJvHidDevice_HidOverlappedRead>Main}\line
+\{bmct readonly.bmp\}\tab{\uldb HidOverlappedWrite\v IDH_TJvHidDevice_HidOverlappedWrite>Main}\line
+\{bmct readonly.bmp\}\tab{\uldb HidOverlappedReadResult\v IDH_TJvHidDevice_HidOverlappedReadResult>Main}\line
+\{bmct readonly.bmp\}\tab{\uldb HidOverlappedWriteResult\v IDH_TJvHidDevice_HidOverlappedWriteResult>Main}\line
+\{bmct readonly.bmp\}\tab{\uldb IsCheckedOut\v IDH_TJvHidDevice_IsCheckedOut>Main}\line
+\{bmct readonly.bmp\}\tab{\uldb IsPluggedIn\v IDH_TJvHidDevice_IsPluggedIn>Main}\line
+\{bmct readonly.bmp\}\tab{\uldb LanguageStrings\v IDH_TJvHidDevice_LanguageStrings>Main}\line
+\{bmct readonly.bmp\}\tab{\uldb LinkCollectionNodes\v IDH_TJvHidDevice_LinkCollectionNodes>Main}\line
+\{bmct empty.bmp\}\tab{\uldb LinkCollectionParam\v IDH_TJvHidDevice_LinkCollectionParam>Main}\line
+\{bmct readonly.bmp\}\tab{\uldb MaxButtonListLength\v IDH_TJvHidDevice_MaxButtonListLength>Main}\line
+\{bmct readonly.bmp\}\tab{\uldb MaxDataListLength\v IDH_TJvHidDevice_MaxDataListLength>Main}\line
+\{bmct readonly.bmp\}\tab{\uldb MaxUsageListLength\v IDH_TJvHidDevice_MaxUsageListLength>Main}\line
+\{bmct empty.bmp\}\tab{\uldb NumInputBuffers\v IDH_TJvHidDevice_NumInputBuffers>Main}\line
+\{bmct empty.bmp\}\tab{\uldb NumOverlappedBuffers\v IDH_TJvHidDevice_NumOverlappedBuffers>Main}\line
+\{bmct readonly.bmp\}\tab{\uldb PhysicalDescriptor\v IDH_TJvHidDevice_PhysicalDescriptor>Main}\line
+\{bmct readonly.bmp\}\tab{\uldb PnPInfo\v IDH_TJvHidDevice_PnPInfo>Main}\line
+\{bmct readonly.bmp\}\tab{\uldb PreparsedData\v IDH_TJvHidDevice_PreparsedData>Main}\line
+\{bmct readonly.bmp\}\tab{\uldb ProductName\v IDH_TJvHidDevice_ProductName>Main}\line
+\{bmct empty.bmp\}\tab{\uldb ReportTypeParam\v IDH_TJvHidDevice_ReportTypeParam>Main}\line
+\{bmct readonly.bmp\}\tab{\uldb SerialNumber\v IDH_TJvHidDevice_SerialNumber>Main}\line
+\{bmct empty.bmp\}\tab{\uldb ThreadSleepTime\v IDH_TJvHidDevice_ThreadSleepTime>Main}\line
+\{bmct empty.bmp\}\tab{\uldb UsagePageParam\v IDH_TJvHidDevice_UsagePageParam>Main}\line
+\{bmct empty.bmp\}\tab{\uldb UsageParam\v IDH_TJvHidDevice_UsageParam>Main}\line
+\{bmct readonly.bmp\}\tab{\uldb VendorName\v IDH_TJvHidDevice_VendorName>Main}
+}\par\page
+
+#{\footnote # pme_cm_TJvHidDevice}
+${\footnote $ Methoden von TJvHidDevice}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\f1\fs20\cf2\b{\uldb TJvHidDevice\v IDH_Class_TJvHidDevice>Main} Methoden\b0}\line
+{\fs20{\ul Legende\v IDH_Legend}}\par\pard}
+{\f1\tx300\b In TJvHidDevice\b0\line
+\{bmct empty.bmp\}\tab{\uldb CancelIO\v IDH_TJvHidDevice_CancelIO>Main}\line
+\{bmct empty.bmp\}\tab{\uldb CheckOut\v IDH_TJvHidDevice_CheckOut>Main}\line
+\{bmct empty.bmp\}\tab{\uldb CloseFile\v IDH_TJvHidDevice_CloseFile>Main}\line
+\{bmct empty.bmp\}\tab{\uldb CloseFileEx\v IDH_TJvHidDevice_CloseFileEx>Main}\line
+\{bmct empty.bmp\}\tab{\uldb Create\v IDH_TJvHidDevice_Create>Main}\line
+\{bmct empty.bmp\}\tab{\uldb DeviceIoControl\v IDH_TJvHidDevice_DeviceIoControl>Main}\line
+\{bmct empty.bmp\}\tab{\uldb Destroy\v IDH_TJvHidDevice_Destroy>Main}\line
+\{bmct empty.bmp\}\tab{\uldb FlushQueue\v IDH_TJvHidDevice_FlushQueue>Main}\line
+\{bmct empty.bmp\}\tab{\uldb GetButtonCaps\v IDH_TJvHidDevice_GetButtonCaps>Main}\line
+\{bmct empty.bmp\}\tab{\uldb GetButtons\v IDH_TJvHidDevice_GetButtons>Main}\line
+\{bmct empty.bmp\}\tab{\uldb GetButtonsEx\v IDH_TJvHidDevice_GetButtonsEx>Main}\line
+\{bmct empty.bmp\}\tab{\uldb GetData\v IDH_TJvHidDevice_GetData>Main}\line
+\{bmct empty.bmp\}\tab{\uldb GetExtendedAttributes\v IDH_TJvHidDevice_GetExtendedAttributes>Main}\line
+\{bmct empty.bmp\}\tab{\uldb GetFeature\v IDH_TJvHidDevice_GetFeature>Main}\line
+\{bmct empty.bmp\}\tab{\uldb GetInputReport\v IDH_TJvHidDevice_GetInputReport>Main}\line
+\{bmct empty.bmp\}\tab{\uldb GetScaledUsageValue\v IDH_TJvHidDevice_GetScaledUsageValue>Main}\line
+\{bmct empty.bmp\}\tab{\uldb GetSpecificButtonCaps\v IDH_TJvHidDevice_GetSpecificButtonCaps>Main}\line
+\{bmct empty.bmp\}\tab{\uldb GetSpecificValueCaps\v IDH_TJvHidDevice_GetSpecificValueCaps>Main}\line
+\{bmct empty.bmp\}\tab{\uldb GetUsages\v IDH_TJvHidDevice_GetUsages>Main}\line
+\{bmct empty.bmp\}\tab{\uldb GetUsagesEx\v IDH_TJvHidDevice_GetUsagesEx>Main}\line
+\{bmct empty.bmp\}\tab{\uldb GetUsageValue\v IDH_TJvHidDevice_GetUsageValue>Main}\line
+\{bmct empty.bmp\}\tab{\uldb GetUsageValueArray\v IDH_TJvHidDevice_GetUsageValueArray>Main}\line
+\{bmct empty.bmp\}\tab{\uldb GetValueCaps\v IDH_TJvHidDevice_GetValueCaps>Main}\line
+\{bmct empty.bmp\}\tab{\uldb InitializeReportForID\v IDH_TJvHidDevice_InitializeReportForID>Main}\line
+\{bmct empty.bmp\}\tab{\uldb OpenFile\v IDH_TJvHidDevice_OpenFile>Main}\line
+\{bmct empty.bmp\}\tab{\uldb OpenFileEx\v IDH_TJvHidDevice_OpenFileEx>Main}\line
+\{bmct empty.bmp\}\tab{\uldb ReadFile\v IDH_TJvHidDevice_ReadFile>Main}\line
+\{bmct empty.bmp\}\tab{\uldb ReadFileEx\v IDH_TJvHidDevice_ReadFileEx>Main}\line
+\{bmct empty.bmp\}\tab{\uldb SetButtons\v IDH_TJvHidDevice_SetButtons>Main}\line
+\{bmct empty.bmp\}\tab{\uldb SetData\v IDH_TJvHidDevice_SetData>Main}\line
+\{bmct empty.bmp\}\tab{\uldb SetFeature\v IDH_TJvHidDevice_SetFeature>Main}\line
+\{bmct empty.bmp\}\tab{\uldb SetOutputReport\v IDH_TJvHidDevice_SetOutputReport>Main}\line
+\{bmct empty.bmp\}\tab{\uldb SetScaledUsageValue\v IDH_TJvHidDevice_SetScaledUsageValue>Main}\line
+\{bmct empty.bmp\}\tab{\uldb SetUsages\v IDH_TJvHidDevice_SetUsages>Main}\line
+\{bmct empty.bmp\}\tab{\uldb SetUsageValue\v IDH_TJvHidDevice_SetUsageValue>Main}\line
+\{bmct empty.bmp\}\tab{\uldb SetUsageValueArray\v IDH_TJvHidDevice_SetUsageValueArray>Main}\line
+\{bmct empty.bmp\}\tab{\uldb UnsetButtons\v IDH_TJvHidDevice_UnsetButtons>Main}\line
+\{bmct empty.bmp\}\tab{\uldb UnsetUsages\v IDH_TJvHidDevice_UnsetUsages>Main}\line
+\{bmct empty.bmp\}\tab{\uldb WriteFile\v IDH_TJvHidDevice_WriteFile>Main}\line
+\{bmct empty.bmp\}\tab{\uldb WriteFileEx\v IDH_TJvHidDevice_WriteFileEx>Main}
+}\par\page
+
+#{\footnote # pme_ce_TJvHidDevice}
+${\footnote $ Events von TJvHidDevice}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\f1\fs20\cf2\b{\uldb TJvHidDevice\v IDH_Class_TJvHidDevice>Main} Events\b0}\line
+{\fs20{\ul Legende\v IDH_Legend}}\par\pard}
+{\f1\tx300\b In TJvHidDevice\b0\line
+\{bmct empty.bmp\}\tab{\uldb OnData\v IDH_TJvHidDevice_OnData>Main}\line
+\{bmct empty.bmp\}\tab{\uldb OnDataError\v IDH_TJvHidDevice_OnDataError>Main}\line
+\{bmct empty.bmp\}\tab{\uldb OnUnplug\v IDH_TJvHidDevice_OnUnplug>Main}
+}\par\page
+
+#{\footnote # IDH_TJvHidDevice_Attributes}
+${\footnote $ TJvHidDevice.Attributes}
+K{\footnote K TJvHidDevice,Attributes;Attributes,TJvHidDevice;Attributes}
+A{\footnote A TJvHidDevice_Attributes;Attributes_Property;Attributes}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.Attributes\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} Attributes: THIDDAttributes;}\par
+{\f0 THIDDAttributes = {\b record}\line
+  Size:          ULONG;\line
+  VendorID:      Word;\line
+  ProductID:     Word;\line
+  VersionNumber: Word;\line
+{\b end};\par}
+Die für jede Geräteart eindeutige Vendor ID und Product ID und die Version 
+des Geräts bzw seiner Firmware. Size ist unwichtig. Das Record wird mit 
+HidD_GetAttributes eingelesen.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_Caps}
+${\footnote $ TJvHidDevice.Caps}
+K{\footnote K TJvHidDevice,Caps;Caps,TJvHidDevice;Caps}
+A{\footnote A TJvHidDevice_Caps;Caps_Property;Caps}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.Caps\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} Caps: THIDPCaps;}\par
+{\f0 THIDPCaps = {\b record}\line
+  Usage:                     TUsage;\line
+  UsagePage:                 TUsage;\line
+  InputReportByteLength:     Word;\line
+  OutputReportByteLength:    Word;\line
+  FeatureReportByteLength:   Word;\line
+  Reserved:                  array [0..16] of Word;\line\line
+  NumberLinkCollectionNodes: Word;\line\line
+  NumberInputButtonCaps:     Word;\line
+  NumberInputValueCaps:      Word;\line
+  NumberInputDataIndices:    Word;\line\line
+  NumberOutputButtonCaps:    Word;\line
+  NumberOutputValueCaps:     Word;\line
+  NumberOutputDataIndices:   Word;\line
+  NumberFeatureButtonCaps:   Word;\line
+  NumberFeatureValueCaps:    Word;\line
+  NumberFeatureDataIndices:  Word;\line
+{\b end};\par}
+Verschiedene Längenangaben und Anzahlen des Gerätes. Das Record wird mit 
+HidP_GetCaps eingelesen.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_Configuration}
+${\footnote $ TJvHidDevice.Configuration}
+K{\footnote K TJvHidDevice,Configuration;Configuration,TJvHidDevice;Configuration}
+A{\footnote A TJvHidDevice_Configuration;Configuration_Property;Configuration}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.Configuration\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} Configuration: THIDDConfiguration;}\par
+{\f0 THIDDConfiguration = {\b record}\line
+  cookie:         Pointer;\line
+  size:           ULONG;\line
+  RingBufferSize: ULONG;\line
+{\b end};\par}
+Dieses Record wird mit HidD_GetConfiguration gelesen und mit HidD_SetConfiguration geschrieben. 
+Diese Property wird nicht im Konstruktor eingelesen, da sie als intern gekennzeichnet ist. 
+Unter Windows XP kann es zu Problemen beim Lesen mit einigen Geräten kommen. 
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_DeviceStrings}
+${\footnote $ TJvHidDevice.DeviceStrings}
+K{\footnote K TJvHidDevice,DeviceStrings;DeviceStrings,TJvHidDevice;DeviceStrings}
+A{\footnote A TJvHidDevice_DeviceStrings;DeviceStrings_Property;DeviceStrings}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.DeviceStrings\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} DeviceStrings[Idx: Byte]: {\b string};}\par
+Alle Strings des Geräts als indizierte Property. Sie kommen direkt aus der Firmware des Geräts. 
+{\uldb VendorName\v IDH_TJvHidDevice_VendorName>Main}, {\uldb ProductName\v IDH_TJvHidDevice_ProductName>Main} 
+und {\uldb SerialNumber\v IDH_TJvHidDevice_SerialNumber>Main} sind in diesen Strings enthalten.\line
+Es können Leerstrings ('') vorkommen, da die Strings nicht fortlaufend zugewiesen sein müssen. 
+Der Index 0 liefert immer ''. Die Strings sind von Unicode zu ANSI gewandelt.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_DeviceStringsUnicode}
+${\footnote $ TJvHidDevice.DeviceStringsUnicode}
+K{\footnote K TJvHidDevice,DeviceStringsUnicode;DeviceStringsUnicode,TJvHidDevice;DeviceStringsUnicode}
+A{\footnote A TJvHidDevice_DeviceStringsUnicode;DeviceStringsUnicode_Property;DeviceStringsUnicode}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.DeviceStringsUnicode\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} DeviceStringsUnicode[Idx: Byte]: WideString;}\par
+Alle Strings des Geräts als indizierte Property. Sie kommen direkt aus der Firmware des Geräts. 
+{\uldb VendorName\v IDH_TJvHidDevice_VendorName>Main}, {\uldb ProductName\v IDH_TJvHidDevice_ProductName>Main} 
+und {\uldb SerialNumber\v IDH_TJvHidDevice_SerialNumber>Main} sind in diesen Strings enthalten.\line
+Es können Leerstrings ('') vorkommen, da die Strings nicht fortlaufend zugewiesen sein müssen. 
+Der Index 0 liefert immer ''. 
+Dies sind die gleichen Strings wie in {\uldb DeviceStrings\v IDH_TJvHidDevice_DeviceStrings>Main}, aber 
+sie sind im originalen Unicode-Format.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_HasReadWriteAccess}
+${\footnote $ TJvHidDevice.HasReadWriteAccess}
+K{\footnote K TJvHidDevice,HasReadWriteAccess;HasReadWriteAccess,TJvHidDevice;HasReadWriteAccess}
+A{\footnote A TJvHidDevice_HasReadWriteAccess;HasReadWriteAccess_Property;HasReadWriteAccess}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.HasReadWriteAccess\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Declaration\b0\par
+{\f0 {\b property} HasReadWriteAccess: Boolean;}\par
+Die property zeigt an ob Lese- und Schreibzugriff auf das Gerät möglich ist. 
+Einige Geräte wie Mäuse und Tastaturen wurden bereits exklusiv vom System geöffnet.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_HidFileHandle}
+${\footnote $ TJvHidDevice.HidFileHandle}
+K{\footnote K TJvHidDevice,HidFileHandle;HidFileHandle,TJvHidDevice;HidFileHandle}
+A{\footnote A TJvHidDevice_HidFileHandle;HidFileHandle_Property;HidFileHandle}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.HidFileHandle\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} HidFileHandle: THandle;}\par
+Der Datei-Handle des Geräts geöffnet mit\line
+CreateFile({\uldb PnPInfo.DevicePath\v IDH_TJvHidDevice_PnPInfo>Main}, GENERIC_READ {\b or} GENERIC_WRITE,\line
+  FILE_SHARE_READ {\b or} FILE_SHARE_WRITE, {\b nil}, OPEN_EXISTING, 0, 0);\line
+Die Datei wird von den Methoden bei Bedarf automatisch geöffnet. Sie bleibt geöffnet bis sie 
+explizit mit {\uldb CloseFile\v IDH_TJvHidDevice_CloseFile>Main} geschlossen wird. 
+Die Datei kann auch mit {\uldb OpenFile\v IDH_TJvHidDevice_OpenFile>Main} geöffnet werden.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_HidOverlappedRead}
+${\footnote $ TJvHidDevice.HidOverlappedRead}
+K{\footnote K TJvHidDevice,HidOverlappedRead;HidOverlappedRead,TJvHidDevice;HidOverlappedRead}
+A{\footnote A TJvHidDevice_HidOverlappedRead;HidOverlappedRead_Property;HidOverlappedRead}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.HidOverlappedRead\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} HidOverlappedRead: THandle;}\par
+Der Datei-Handle des Geräts geöffnet mit\line
+CreateFile({\uldb PnPInfo.DevicePath\v IDH_TJvHidDevice_PnPInfo>Main}, GENERIC_READ,\line
+  FILE_SHARE_READ {\b or} FILE_SHARE_WRITE, {\b nil}, OPEN_EXISTING, FILE_FLAG_OVERLAPPED, 0);\line
+Die Datei wird von den Methoden bei Bedarf automatisch geöffnet. Sie bleibt geöffnet bis sie 
+explizit mit {\uldb CloseFileEx(omhRead)\v IDH_TJvHidDevice_CloseFileEx>Main} geschlossen wird. 
+Die Datei kann auch mit {\uldb OpenFileEx(omhRead)\v IDH_TJvHidDevice_OpenFileEx>Main} geöffnet werden. 
+Nur die Methode {\uldb ReadFileEx\v IDH_TJvHidDevice_ReadFileEx>Main} benutzt den Datei-Handle.\line
+Die Trennung in zwei separate Datei-Handles zum Lesen und Schreiben erlaubt es, das Lesen und 
+Schreiben in verschiedene Threads aufzuteilen. Der andere Datei-Handle ist 
+{\uldb HidOverlappedWrite\v IDH_TJvHidDevice_HidOverlappedWrite>Main}.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_HidOverlappedWrite}
+${\footnote $ TJvHidDevice.HidOverlappedWrite}
+K{\footnote K TJvHidDevice,HidOverlappedWrite;HidOverlappedWrite,TJvHidDevice;HidOverlappedWrite}
+A{\footnote A TJvHidDevice_HidOverlappedWrite;HidOverlappedWrite_Property;HidOverlappedWrite}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.HidOverlappedWrite\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} HidOverlappedWrite: THandle;}\par
+Der Datei-Handle des Geräts geöffnet mit\line
+CreateFile({\uldb PnPInfo.DevicePath\v IDH_TJvHidDevice_PnPInfo>Main}, GENERIC_WRITE,\line
+  FILE_SHARE_READ {\b or} FILE_SHARE_WRITE, {\b nil}, OPEN_EXISTING, FILE_FLAG_OVERLAPPED, 0);\line
+Die Datei wird von den Methoden bei Bedarf automatisch geöffnet. Sie bleibt geöffnet bis sie 
+explizit mit {\uldb CloseFileEx(omhWrite)\v IDH_TJvHidDevice_CloseFileEx>Main} geschlossen wird. 
+Die Datei kann auch mit {\uldb OpenFileEx(omhWrite)\v IDH_TJvHidDevice_OpenFileEx>Main} geöffnet werden. 
+Nur die Methode {\uldb WriteFileEx\v IDH_TJvHidDevice_WriteFileEx>Main} benutzt den Datei-Handle.\line
+Die Trennung in zwei separate Datei-Handles zum Lesen und Schreiben erlaubt es, das Lesen und 
+Schreiben in verschiedene Threads aufzuteilen. Der andere Datei-Handle ist 
+{\uldb HidOverlappedRead\v IDH_TJvHidDevice_HidOverlappedRead>Main}.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_HidOverlappedReadResult}
+${\footnote $ TJvHidDevice.HidOverlappedReadResult}
+K{\footnote K TJvHidDevice,HidOverlappedReadResult;HidOverlappedReadResult,TJvHidDevice;HidOverlappedReadResult}
+A{\footnote A TJvHidDevice_HidOverlappedReadResult;HidOverlappedReadResult_Property;HidOverlappedReadResult}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.HidOverlappedReadResult\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Declaration\b0\par
+{\f0 {\b property} HidOverlappedReadResult: DWORD;}\par
+Das Resultat eines {\uldb ReadFileEx\v IDH_TJvHidDevice_ReadFileEx>Main} Aufrufs. 
+Der Wert der Property bleibt 0 bis die Leseoperation erfolgreich abgeschlosen wurde. Die ReadWriteDemo zeigt den korrekten Gebrauch.\line
+Die Trennung in zwei separate Datei-Handles zum Lesen und Schreiben erlaubt es, das Lesen und 
+Schreiben in verschiedene Threads aufzuteilen. Das andere Resultat ist 
+{\uldb HidOverlappedWriteResult\v IDH_TJvHidDevice_HidOverlappedWriteResult>Main}.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_HidOverlappedWriteResult}
+${\footnote $ TJvHidDevice.HidOverlappedWriteResult}
+K{\footnote K TJvHidDevice,HidOverlappedWriteResult;HidOverlappedWriteResult,TJvHidDevice;HidOverlappedWriteResult}
+A{\footnote A TJvHidDevice_HidOverlappedWriteResult;HidOverlappedWriteResult_Property;HidOverlappedWriteResult}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.HidOverlappedWriteResult\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Declaration\b0\par
+{\f0 {\b property} HidOverlappedWriteResult: DWORD;}\par
+Das Resultat eines {\uldb WriteFileEx\v IDH_TJvHidDevice_WriteFileEx>Main} Aufrufs. 
+Der Wert der Property bleibt 0 bis die Schreiboperation erfolgreich abgeschlosen wurde. Die ReadWriteDemo zeigt den korrekten Gebrauch.\line
+Die Trennung in zwei separate Datei-Handles zum Lesen und Schreiben erlaubt es, das Lesen und 
+Schreiben in verschiedene Threads aufzuteilen. Das andere Resultat ist 
+{\uldb HidOverlappedReadResult\v IDH_TJvHidDevice_HidOverlappedReadResult>Main}.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_IsCheckedOut}
+${\footnote $ TJvHidDevice.IsCheckedOut}
+K{\footnote K TJvHidDevice,IsCheckedOut;IsCheckedOut,TJvHidDevice;IsCheckedOut}
+A{\footnote A TJvHidDevice_IsCheckedOut;IsCheckedOut_Property;IsCheckedOut}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.IsCheckedOut\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} IsCheckedOut: Boolean;}\par
+Ein einfaches Flag, das anzeigt ob das Objekt mit einer der CheckOut-Methoden zur Benutzung vorgesehen ist.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_IsPluggedIn}
+${\footnote $ TJvHidDevice.IsPluggedIn}
+K{\footnote K TJvHidDevice,IsPluggedIn;IsPluggedIn,TJvHidDevice;IsPluggedIn}
+A{\footnote A TJvHidDevice_IsPluggedIn;IsPluggedIn_Property;IsPluggedIn}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.IsPluggedIn\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} IsPluggedIn: Boolean;}\par
+Das Flag teilt mit, ob das zum Objekt gehörige Gerät ausgesteckt wurde. Alle Methoden und einige 
+Properties hören auf zu funktionieren, wenn das Flag den Wert False hat. Wird der zum Objekt 
+gehörige {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController>Main} zerstört, so wird 
+bei allen Objekten IsPluggedIn auf False gesetzt.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_LanguageStrings}
+${\footnote $ TJvHidDevice.LanguageStrings}
+K{\footnote K TJvHidDevice,LanguageStrings;LanguageStrings,TJvHidDevice;LanguageStrings}
+A{\footnote A TJvHidDevice_LanguageStrings;LanguageStrings_Property;LanguageStrings}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.LanguageStrings\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} LanguageStrings: TStringList;}\par
+Die Liste aller vom Gerät in den {\uldb DeviceStrings\v IDH_TJvHidDevice_DeviceStrings>Main} bzw 
+{\uldb DeviceStringsUnicode\v IDH_TJvHidDevice_DeviceStringsUnicode>Main} verwendeten Sprachen. 
+Die Liste enthält die Namen der Sprachen in lokalisierter Form. Die Liste kann leer sein.\line
+Welche Sprache Windows abruft ist nicht dokumentiert. Es gibt keinen Weg die gewünschte 
+Sprache mit HID-Funktionen anzugeben. Damit ist die Liste nur dazu geeignet, die Sprachfähigkeiten des 
+Geräteentwicklers zu beurteilen.\par
+Es scheint so zu sein, das nur Windows XP eine andere Sprache als "Englisch (US)" zugreift.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_LinkCollectionNodes}
+${\footnote $ TJvHidDevice.LinkCollectionNodes}
+K{\footnote K TJvHidDevice,LinkCollectionNodes;LinkCollectionNodes,TJvHidDevice;LinkCollectionNodes}
+A{\footnote A TJvHidDevice_LinkCollectionNodes;LinkCollectionNodes_Property;LinkCollectionNodes}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.LinkCollectionNodes\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} LinkCollectionNodes[Idx: WORD]: THIDPLinkCollectionNode;}\par
+Alle Link-Collections des Gerätes.\par
+{\f0 THIDPLinkCollectionNode = {\b record}\line
+  LinkUsage:        TUsage;\line
+  LinkUsagePage:    TUsage;\line
+  Parent:           Word;\line
+  NumberOfChildren: Word;\line
+  NextSibling:      Word;\line
+  FirstChild:       Word;\line
+  CollectionType:   BYTE;\line
+  IsAlias:          BYTE;\line
+  Reserved:         Word;\line
+  UserContext:      Pointer;\line
+{\b end};\par}
+Dies ist der Inhalt des HID-Deskriptors. Er ist zu seiner Baumform parsiert. 
+Parent, NextSibling und FirstChild spannen den Baum in üblicher Weise auf. 
+Die Werte sind Indices in die LinkCollectionNodes.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_LinkCollectionParam}
+${\footnote $ TJvHidDevice.LinkCollectionParam}
+K{\footnote K TJvHidDevice,LinkCollectionParam;LinkCollectionParam,TJvHidDevice;LinkCollectionParam}
+A{\footnote A TJvHidDevice_LinkCollectionParam;LinkCollectionParam_Property;LinkCollectionParam}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.LinkCollectionParam\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} LinkCollectionParam: WORD;}\par
+Viele der Methoden teilen sich gleiche Parameter. Alle Properties mit der Endung "Param" 
+werden automatisch bei diesen Methoden hinzugefügt. Es spart Code erst die Property zu 
+setzen und dann mehrere Methoden aufzurufen. 
+Die Max*ListLength Properties sind mit den Param-Properties verknüpft. 
+Das Setzen der Param-Properties löst ein Update der Max*ListLength-Properties aus.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_MaxButtonListLength}
+${\footnote $ TJvHidDevice.MaxButtonListLength}
+K{\footnote K TJvHidDevice,MaxButtonListLength;MaxButtonListLength,TJvHidDevice;MaxButtonListLength}
+A{\footnote A TJvHidDevice_MaxButtonListLength;MaxButtonListLength_Property;MaxButtonListLength}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.MaxButtonListLength\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} MaxButtonListLength: ULONG;}\par
+Die maximale Anzahl an Elementen die {\uldb GetButtonCaps\v IDH_TJvHidDevice_GetButtonCaps>Main} 
+liefern kann.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_MaxDataListLength}
+${\footnote $ TJvHidDevice.MaxDataListLength}
+K{\footnote K TJvHidDevice,MaxDataListLength;MaxDataListLength,TJvHidDevice;MaxDataListLength}
+A{\footnote A TJvHidDevice_MaxDataListLength;MaxDataListLength_Property;MaxDataListLength}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.MaxDataListLength\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} MaxDataListLength: ULONG;}\par
+Die maximale Anzahl an Elementen die {\uldb GetData\v IDH_TJvHidDevice_GetData>Main} 
+liefern kann.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_MaxUsageListLength}
+${\footnote $ TJvHidDevice.MaxUsageListLength}
+K{\footnote K TJvHidDevice,MaxUsageListLength;MaxUsageListLength,TJvHidDevice;MaxUsageListLength}
+A{\footnote A TJvHidDevice_MaxUsageListLength;MaxUsageListLength_Property;MaxUsageListLength}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.MaxUsageListLength\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} MaxUsageListLength: ULONG;}\par
+Die maximale Anzahl an Elementen die {\uldb GetUsages\v IDH_TJvHidDevice_GetUsages>Main} 
+bzw {\uldb GetUsagesEx\v IDH_TJvHidDevice_GetUsagesEx>Main} 
+liefern kann.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_NumInputBuffers}
+${\footnote $ TJvHidDevice.NumInputBuffers}
+K{\footnote K TJvHidDevice,NumInputBuffers;NumInputBuffers,TJvHidDevice;NumInputBuffers}
+A{\footnote A TJvHidDevice_NumInputBuffers;NumInputBuffers_Property;NumInputBuffers}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.NumInputBuffers\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} NumInputBuffers: Integer;}\par
+Die Anzahl der von {\uldb HidFileHandle\v IDH_TJvHidDevice_HidFileHandle>Main} intern 
+benutzten Report-Puffer. Der Wert wird mit HidD_GetNumInputBuffers gelesen und mit 
+HidD_SetNumInputBuffers geschrieben. Erst ab Windows 98 SE bewirkt das Setzen des Wertes etwas.\par
+Es sind durchaus größere Werte wie 128 oder größer erlaubt. Es gehen weniger Reports verloren 
+bei großen Werten.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_NumOverlappedBuffers}
+${\footnote $ TJvHidDevice.NumOverlappedBuffers}
+K{\footnote K TJvHidDevice,NumOverlappedBuffers;NumOverlappedBuffers,TJvHidDevice;NumOverlappedBuffers}
+A{\footnote A TJvHidDevice_NumOverlappedBuffers;NumOverlappedBuffers_Property;NumOverlappedBuffers}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.NumOverlappedBuffers\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} NumOverlappedBuffers: Integer;}\par
+Die Anzahl der von {\uldb HidOverlappedRead\v IDH_TJvHidDevice_HidOverlappedRead>Main} intern 
+benutzten Report-Puffer. Der Wert wird mit HidD_GetNumInputBuffers gelesen und mit 
+HidD_SetNumInputBuffers geschrieben. Erst ab Windows 98 SE bewirkt das Setzen des Wertes etwas.\par
+Es sind durchaus größere Werte wie 128 oder größer erlaubt. Es gehen weniger Reports verloren 
+bei großen Werten.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_PhysicalDescriptor}
+${\footnote $ TJvHidDevice.PhysicalDescriptor}
+K{\footnote K TJvHidDevice,PhysicalDescriptor;PhysicalDescriptor,TJvHidDevice;PhysicalDescriptor}
+A{\footnote A TJvHidDevice_PhysicalDescriptor;PhysicalDescriptor_Property;PhysicalDescriptor}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.PhysicalDescriptor\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} PhysicalDescriptor: {\uldb TJvPhysicalDescriptor\v IDH_Type_TJvPhysicalDescriptor};}\par
+Der Physical Descriptor des HID-Gerätes. Er kann leer sein, da er optional ist. 
+Es wird beschrieben mit welchen Körperteilen die Buttons und Controls des 
+Gerätes bedient werden sollen.
+\par\page
+
+#{\footnote # IDH_Type_TJvPhysicalDescriptor}
+${\footnote $ TJvPhysicalDescriptor}
+K{\footnote K TJvPhysicalDescriptor}
+A{\footnote A TJvPhysicalDescriptor_Type;TJvPhysicalDescriptor}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvPhysicalDescriptor\b0}   \line
+{\fs20    {\uldb PnPInfo\v IDH_TJvHidDevice_PhysicalDescriptor}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 IDH_Type_TJvPhysicalDescriptor = {\b array of} WORD;\par}
+Der Physical Descriptor wird in einem dynamischen Array abgelegt. 
+Die Größe wird automatisch gesetzt. Ein leerer Descriptor hat die Länge 1 und 
+enthält den Wert 0.
+\par\page
+
+#{\footnote # IDH_Type_TJvHidPnPInfo}
+${\footnote $ TJvHidPnPInfo}
+K{\footnote K TJvHidPnPInfo}
+A{\footnote A TJvHidPnPInfo_Type;TJvHidPnPInfo}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidPnPInfo\b0}   \line
+{\fs20    {\uldb PnPInfo\v IDH_TJvHidDevice_PnPInfo}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 TJvHidPnPInfo = {\b class}(TObject)\line
+    // {\i private parts removed}\line
+    {\b property} DeviceID:        DWORD;\line
+    {\b property} DevicePath:      {\b string};\line
+    // {\i registry values}\line
+    {\b property} Capabilities:    DWORD;\line
+    {\b property} ClassDescr:      {\b string};\line
+    {\b property} ClassGUID:       {\b string};\line
+    {\b property} CompatibleIDs:   TStringList;\line
+    {\b property} ConfigFlags:     DWORD;\line
+    {\b property} DeviceDescr:     {\b string};\line
+    {\b property} Driver:          {\b string};\line
+    {\b property} FriendlyName:    {\b string};\line
+    {\b property} HardwareID:      TStringList;\line
+    {\b property} LowerFilters:    TStringList;\line
+    {\b property} Mfg:             {\b string};\line
+    {\b property} UpperFilters:    TStringList;\line
+    {\b property} Address:         {\b string};\line
+    {\b property} BusNumber:       DWORD;\line
+    {\b property} BusType:         {\b string};\line
+    {\b property} Characteristics: {\b string};\line
+    {\b property} DevType:         {\b string};\line
+    {\b property} EnumeratorName:  {\b string};\line
+    {\b property} Exclusive:       DWORD;\line
+    {\b property} LegacyBusType:   {\b string};\line
+    {\b property} LocationInfo:    {\b string};\line
+    {\b property} PhysDevObjName:  {\b string};\line
+    {\b property} Security:        {\b string};\line
+    {\b property} Service:         {\b string};\line
+    {\b property} UINumber:        DWORD;\line
+    {\b property} UINumberFormat:  {\b string};\line
+{\b end};\par}
+
+Alle geräterelevanten Registry-Einträge. 
+{\f0 DeviceID} ist eine eindeutige interne Nummer anhand derer Windows die Geräte unterscheidet. 
+Selbst zwei ansonsten völlig gleiche Geräte haben unterschiedliche DeviceIDs.\par
+{\f0 DevicePath} ist der Pfadname zum Öffnen von {\uldb HidFileHandle\v IDH_TJvHidDevice_HidFileHandle>Main}. 
+Es ist ein spezieller Pfadname, der mit \'27\\\\.\\\'27 beginnt und den Treiber des
+Gerätes benennt.\par
+{\f0 ClassDescr} ist eine benutzerlesbare Beschreibung der Geräteklasse. 
+{\uldb cHidKeyboardClass\v IDH_TJvHidDeviceController_CheckOutByClass>Main}, 
+{\uldb cHidMouseClass\v IDH_TJvHidDeviceController_CheckOutByClass>Main} und 
+{\uldb cHidNoClass\v IDH_TJvHidDeviceController_CheckOutByClass>Main} sind 
+vordefinierte Konstanten für drei der möglichen Texte.\par
+{\f0 ClassGUID} ist die GUID des Klassentreibers des Gerätes.\par
+{\f0 DeviceDescr} ist eine benutzerlesbare Beschreibung des Gerätes. 
+Der Text stammt aus der INF-Datei der Treiberinstallation. 
+Für Klassentreiber enthalten die Windows-INF-Dateien entsprechend lokalisierte Texte.\par
+{\f0 Mfg} ist eine benutzerlesbare Beschreibung des Gerätes und stammt aus der INF-Datei.\par
+Einige Elemente der Struktur sind für HID-Geräte nicht relevant und sind deshalb immer leer.\par
+Das Record wurde zu einer Klasse umgewandelt, um eine einfachere interne Handhabbarkeit zu erhalten. 
+Einige Elemente wurden zu TStringList umgetypt, da sie mehrere Strings enthalten. PnPInfo 
+bleibt aber weiterhin eine Readonly-Struktur.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_PnPInfo}
+${\footnote $ TJvHidDevice.PnPInfo}
+K{\footnote K TJvHidDevice,PnPInfo;PnPInfo,TJvHidDevice;PnPInfo}
+A{\footnote A TJvHidDevice_PnPInfo;PnPInfo_Property;PnPInfo}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.PnPInfo\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} PnPInfo: {\uldb TJvHidPnPInfo\v IDH_Type_TJvHidPnPInfo>Main};}\par
+Das PnPInfo-Record enthält alle während der Enumeration der HID-Geräte erhältliche 
+Information. Sie stammt überwiegend aus der Registry.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_PreparsedData}
+${\footnote $ TJvHidDevice.PreparsedData}
+K{\footnote K TJvHidDevice,PreparsedData;PreparsedData,TJvHidDevice;PreparsedData}
+A{\footnote A TJvHidDevice_PreparsedData;PreparsedData_Property;PreparsedData}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.PreparsedData\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} PreparsedData: PHIDPPreparsedData;}\par
+PreparsedData ist eine opake Datenstruktur, die als Parameter an viele der 
+HID-Funktionen übergeben werden muss. Sie ist als Property zugänglich, damit 
+die HID-Funktionen auch direkt aufgerufen werden können.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_ProductName}
+${\footnote $ TJvHidDevice.ProductName}
+K{\footnote K TJvHidDevice,ProductName;ProductName,TJvHidDevice;ProductName}
+A{\footnote A TJvHidDevice_ProductName;ProductName_Property;ProductName}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.ProductName\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} ProductName: WideString;}\par
+Der Produktname direkt aus der Firmware des Gerätes. 
+Der String kann leer sein, da er optional ist. 
+Der String ist in seiner originalen Unicode-Form.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_ReportTypeParam}
+${\footnote $ TJvHidDevice.ReportTypeParam}
+K{\footnote K TJvHidDevice,ReportTypeParam;ReportTypeParam,TJvHidDevice;ReportTypeParam}
+A{\footnote A TJvHidDevice_ReportTypeParam;ReportTypeParam_Property;ReportTypeParam}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.ReportTypeParam\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} ReportTypeParam: THIDPReportType;}\par
+Viele der Methoden haben gleichlautende Parameter. Alle Properties mit Suffix Param 
+werden als Parameter in der Implementation der Methoden verwendet. Da mit den Methoden 
+oft auf den gleichen Report zugegriffen wird, spart es Code zuerst die Param-Properties zu setzen 
+und dann mehrere Methoden aufzurufen. 
+Die Max*ListLength-Properties sind mit den Param-Properties verknüpft. Jedes Setzen 
+der Param-Properties löst eine Neuberechung der Max*ListLength-Properties aus.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_SerialNumber}
+${\footnote $ TJvHidDevice.SerialNumber}
+K{\footnote K TJvHidDevice,SerialNumber;SerialNumber,TJvHidDevice;SerialNumber}
+A{\footnote A TJvHidDevice_SerialNumber;SerialNumber_Property;SerialNumber}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.SerialNumber\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} SerialNumber: WideString;}\par
+Die Seriennummer direkt aus der Firmware des Gerätes. 
+Der String kann leer sein, da er optional ist. 
+Der String ist in seiner originalen Unicode-Form.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_Tag}
+${\footnote $ TJvHidDevice.Tag}
+K{\footnote K TJvHidDevice,Tag;Tag,TJvHidDevice;Tag}
+A{\footnote A TJvHidDevice_Tag;Tag_Property;Tag}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.Tag\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Declaration\b0\par
+{\f0 {\b property} Tag: Integer;}\par
+Eine Standard-Tag-Property in der man beliebige 32-Bit Werte ablegen kann.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_ThreadSleepTime}
+${\footnote $ TJvHidDevice.ThreadSleepTime}
+K{\footnote K TJvHidDevice,ThreadSleepTime;ThreadSleepTime,TJvHidDevice;ThreadSleepTime}
+A{\footnote A TJvHidDevice_ThreadSleepTime;ThreadSleepTime_Property;ThreadSleepTime}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.ThreadSleepTime\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Declaration\b0\par
+{\f0 {\b property} ThreadSleepTime: Integer;}\par
+Dies ist die Zeit in Millisekunden, die der Thread des {\uldb OnData\v IDH_TJvHidDevice_OnData>Main}-Event 
+eines Geräts schläft. Der Thread wacht nur auf, wenn ein Report gelesen wurde oder der Timeout abgelaufen ist. 
+Dies ermöglicht es den Thread zu beenden, ohne das Daten gelesen werden müssen. Je länger die ThreadSleepTime 
+ist desto weniger CPU-Zeit wird vom Thread verbraucht, aber die Verzögerung bis zum Beenden des Threads 
+ist entsprechend länger. Es muss also eine Balance zwischen diesen Bedingungen gefunden werden.\line
+Der Defaultwert ist 100 msecs. Die Property kann auf Wert von 10 bis 10.000 gesetzt werden.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_UsagePageParam}
+${\footnote $ TJvHidDevice.UsagePageParam}
+K{\footnote K TJvHidDevice,UsagePageParam;UsagePageParam,TJvHidDevice;UsagePageParam}
+A{\footnote A TJvHidDevice_UsagePageParam;UsagePageParam_Property;UsagePageParam}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.UsagePageParam\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} UsagePageParam: TUsage;}\par
+Viele der Methoden haben gleichlautende Parameter. Alle Properties mit Suffix Param 
+werden als Parameter in der Implementation der Methoden verwendet. Da mit den Methoden 
+oft auf den gleichen Report zugegriffen wird, spart es Code zuerst die Param-Properties zu setzen 
+und dann mehrere Methoden aufzurufen. 
+Die Max*ListLength-Properties sind mit den Param-Properties verknüpft. Jedes Setzen 
+der Param-Properties löst eine Neuberechung der Max*ListLength-Properties aus.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_UsageParam}
+${\footnote $ TJvHidDevice.UsageParam}
+K{\footnote K TJvHidDevice,UsageParam;UsageParam,TJvHidDevice;UsageParam}
+A{\footnote A TJvHidDevice_UsageParam;UsageParam_Property;UsageParam}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.UsageParam\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} UsageParam: TUsage;}\par
+Viele der Methoden haben gleichlautende Parameter. Alle Properties mit Suffix Param 
+werden als Parameter in der Implementation der Methoden verwendet. Da mit den Methoden 
+oft auf den gleichen Report zugegriffen wird, spart es Code zuerst die Param-Properties zu setzen 
+und dann mehrere Methoden aufzurufen. 
+Die Max*ListLength-Properties sind mit den Param-Properties verknüpft. Jedes Setzen 
+der Param-Properties löst eine Neuberechung der Max*ListLength-Properties aus.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_VendorName}
+${\footnote $ TJvHidDevice.VendorName}
+K{\footnote K TJvHidDevice,VendorName;VendorName,TJvHidDevice;VendorName}
+A{\footnote A TJvHidDevice_VendorName;VendorName_Property;VendorName}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.VendorName\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} VendorName: WideString;}\par
+Der Name des Herstellers direkt aus der Firmware des Gerätes. 
+Der String kann leer sein, da er optional ist. 
+Der String ist in seiner originalen Unicode-Form.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_CancelIO}
+${\footnote $ TJvHidDevice.CancelIO}
+K{\footnote K TJvHidDevice,CancelIO;CancelIO,TJvHidDevice;CancelIO}
+A{\footnote A TJvHidDevice_CancelIO;CancelIO_Method;CancelIO}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.CancelIO\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} CancelIO({\b const} Mode: {\uldb TJvHidOpenExMode\v IDH_Type_TJvHidOpenExMode>Main}): Boolean;}\par
+Bricht eventuell anstehende IO-Operationen ab. 
+{\f0 CancelIO(omhRead)} wirkt auf {\uldb HidOverlappedRead\v IDH_TJvHidDevice_HidOverlappedRead>Main} während 
+{\f0 CancelIO(omhWrite)} auf {\uldb HidOverlappedWrite\v IDH_TJvHidDevice_HidOverlappedWrite>Main} wirkt.\line
+Der Rückgabewert ist True für Erfolg, sonst False.
+\par\page
+
+#{\footnote # IDH_Type_TJvHidOpenExMode}
+${\footnote $ TJvHidOpenExMode}
+K{\footnote K TJvHidOpenExMode}
+A{\footnote A TJvHidOpenExMode_Type;TJvHidOpenExMode}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidOpenExMode\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b type} TJvHidOpenExMode = (omhRead, omhWrite);}\par
+Die Werte des Typs dienen zur Auswahl von {\uldb HidOverlappedRead\v IDH_TJvHidDevice_HidOverlappedRead>Main} oder 
+{\uldb HidOverlappedWrite\v IDH_TJvHidDevice_HidOverlappedWrite>Main}.\line
+Sie werden in den Methoden  
+{\uldb CancelIO\v IDH_TJvHidDevice_CancelIO>Main}, 
+{\uldb CloseFileEx\v IDH_TJvHidDevice_CloseFileEx>Main} und 
+{\uldb OpenFileEx\v IDH_TJvHidDevice_OpenFileEx>Main} benutzt.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_CloseFile}
+${\footnote $ TJvHidDevice.CloseFile}
+K{\footnote K TJvHidDevice,CloseFile;CloseFile,TJvHidDevice;CloseFile}
+A{\footnote A TJvHidDevice_CloseFile;CloseFile_Method;CloseFile}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.CloseFile\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b procedure} CloseFile;}\par
+Es wird der Datei-Handle {\uldb HidFileHandle\v IDH_TJvHidDevice_HidFileHandle>Main} geschlossen, falls er geöffnet ist. 
+Die Methoden öffnen den Datei-Handle automatisch, falls sie ihn benotigen. 
+{\uldb OpenFile\v IDH_TJvHidDevice_OpenFile>Main} öffnet den Datei-Handle explizit.\par
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_CloseFileEx}
+${\footnote $ TJvHidDevice.CloseFileEx}
+K{\footnote K TJvHidDevice,CloseFileEx;CloseFileEx,TJvHidDevice;CloseFileEx}
+A{\footnote A TJvHidDevice_CloseFileEx;CloseFileEx_Method;CloseFileEx}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.CloseFileEx\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b procedure} CloseFileEx({\b const} Mode: {\uldb TJvHidOpenExMode\v IDH_Type_TJvHidOpenExMode>Main});}\par
+Schliesst entweder den Datei-Handle {\uldb HidOverlappedRead\v IDH_TJvHidDevice_HidOverlappedRead>Main} oder 
+{\uldb HidOverlappedWrite\v IDH_TJvHidDevice_HidOverlappedWrite>Main}. 
+CloseFileEx(omhRead) schliesst {\uldb HidOverlappedRead\v IDH_TJvHidDevice_HidOverlappedRead>Main} während 
+CloseFileEx(omhWrite) {\uldb HidOverlappedWrite\v IDH_TJvHidDevice_HidOverlappedWrite>Main} schliesst.\line
+Die Methoden öffnen einen der Datei-Handles automatisch, falls sie ihn benotigen. 
+{\uldb OpenFileEx\v IDH_TJvHidDevice_OpenFileEx>Main} öffnet einen der Datei-Handles explizit.\par
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_DeviceIoControl}
+${\footnote $ TJvHidDevice.DeviceIoControl}
+K{\footnote K TJvHidDevice,DeviceIoControl;DeviceIoControl,TJvHidDevice;DeviceIoControl}
+A{\footnote A TJvHidDevice_DeviceIoControl;DeviceIoControl_Method;DeviceIoControl}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.DeviceIoControl\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} DeviceIoControl(IoControlCode: DWORD; InBuffer: Pointer; InSize: DWORD; 
+OutBuffer: Pointer; OutSize: DWORD; {\b var} BytesReturned: DWORD): Boolean;}\par
+Führt {\f0 Windows.DeviceIoControl({\uldb HidFileHandle\v IDH_TJvHidDevice_HidFileHandle>Main}, IoControlCode, InBuffer, InSize, OutBuffer, OutSize, BytesReturned, {\b nil});} aus.\par
+Der Rückgabewert kommt von Windows.DeviceIoControl oder {\uldb OpenFile\v IDH_TJvHidDevice_OpenFile>Main}.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_Create}
+${\footnote $ TJvHidDevice.Create}
+K{\footnote K TJvHidDevice,Create;Create,TJvHidDevice;Create}
+K{\footnote K TJvHidDevice,Create;Create,TJvHidDevice;Create}
+A{\footnote A TJvHidDevice_Create;Create_Method;Create}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.Create\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b constructor} Create;}\par
+Dies ist ein Blind-Konstruktor. Er erzeugt immer eine Exception. 
+Da ein privater {\f0 TJvHidDevice.Create}-Konstruktor leider nicht {\f0 TObject.Create} 
+verbirgt, erinnert dieser Blind-Konstruktor daran, das ein TJvHidDevice-Objekt nicht 
+explizit erzeugt werden darf.\par
+Der eigentliche Konstruktor ist CtlCreate.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_Destroy}
+${\footnote $ TJvHidDevice.Destroy}
+K{\footnote K TJvHidDevice,Destroy;Destroy,TJvHidDevice;Destroy}
+K{\footnote K TJvHidDevice,Destroy;Destroy,TJvHidDevice;Destroy}
+A{\footnote A TJvHidDevice_Destroy;Destroy_Method;Destroy}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.Destroy\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b destructor} Destroy; {\b override};}\par
+Der Destruktor der TJvHidDevice-Klasse. Der Konstruktor ist privat! 
+Nur ein {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController>Main} 
+darf ein TJvHidDevice-Objekt erzeugen. 
+Ist das Objekt in Benutzung ("checked out") und das zugehörige Gerät eingesteckt, 
+dann erzeugt der {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController>Main} 
+ein neues Objekt für das Gerät als Ersatz.\line
+Wie bei Destroy üblich sollte besser Free aufgerufen werden. 
+Es ist erlaubt den Destruktor zu überladen, aber es muss in der Implementation unbedingt 
+"{\f0 {\b inherited} Destroy;}" aufgerufen werden, da sonst die Verwaltung des 
+{\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController>Main} 
+versagt.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_FlushQueue}
+${\footnote $ TJvHidDevice.FlushQueue}
+K{\footnote K TJvHidDevice,FlushQueue;FlushQueue,TJvHidDevice;FlushQueue}
+A{\footnote A TJvHidDevice_FlushQueue;FlushQueue_Method;FlushQueue}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.FlushQueue\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} FlushQueue: Boolean;}\par
+Ruft {\f0 HidD_FlushQueue({\uldb HidFileHandle\v IDH_TJvHidDevice_HidFileHandle>Main});} auf, 
+um alle in den Reportpuffern wartenden ungelesenen Reports zu löschen.\par
+Der Rückgabewert kommt von HidD_FlushQueue oder {\uldb OpenFile\v IDH_TJvHidDevice_OpenFile>Main}.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_GetButtonCaps}
+${\footnote $ TJvHidDevice.GetButtonCaps}
+K{\footnote K TJvHidDevice,GetButtonCaps;GetButtonCaps,TJvHidDevice;GetButtonCaps}
+A{\footnote A TJvHidDevice_GetButtonCaps;GetButtonCaps_Method;GetButtonCaps}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.GetButtonCaps\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} GetButtonCaps(ButtonCaps: PHIDPButtonCaps; {\b var} Count: WORD): NTSTATUS;}\par
+Ruft {\f0 HidP_GetButtonCaps({\uldb ReportTypeParam\v IDH_TJvHidDevice_ReportTypeParam>Main}, ButtonCaps, Count, {\uldb PreparsedData\v IDH_TJvHidDevice_PreparsedData>Main});} auf.\par
+Der Rückgabewert kommt von HidP_GetButtonCaps oder ist {\f0 HIDP_STATUS_NULL} falls das Gerät nicht eingesteckt ist.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_GetButtons}
+${\footnote $ TJvHidDevice.GetButtons}
+K{\footnote K TJvHidDevice,GetButtons;GetButtons,TJvHidDevice;GetButtons}
+A{\footnote A TJvHidDevice_GetButtons;GetButtons_Method;GetButtons}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.GetButtons\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} GetButtons(UsageList: PUsage; {\b var} UsageLength: ULONG; {\b var} Report; ReportLength: ULONG): NTSTATUS;}\par
+Ruft {\f0 HidP_GetButtons({\uldb ReportTypeParam\v IDH_TJvHidDevice_ReportTypeParam>Main}, {\uldb UsagePageParam\v IDH_TJvHidDevice_UsagePageParam>Main}, {\uldb LinkCollectionParam\v IDH_TJvHidDevice_LinkCollectionParam>Main}, UsageList, UsageLength, {\uldb PreparsedData\v IDH_TJvHidDevice_PreparsedData>Main}, Report, ReportLength);} auf.\par
+Der Rückgabewert kommt von HidP_GetButtons oder ist {\f0 HIDP_STATUS_NULL} falls das Gerät nicht eingesteckt ist.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_GetButtonsEx}
+${\footnote $ TJvHidDevice.GetButtonsEx}
+K{\footnote K TJvHidDevice,GetButtonsEx;GetButtonsEx,TJvHidDevice;GetButtonsEx}
+A{\footnote A TJvHidDevice_GetButtonsEx;GetButtonsEx_Method;GetButtonsEx}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.GetButtonsEx\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} GetButtonsEx(UsageList: PUsageAndPage; {\b var} UsageLength: ULONG; {\b var} Report; ReportLength: ULONG): NTSTATUS;}\par
+{\f0 TUsageAndPage = {\b record}\line
+  Usage:     TUsage;\line
+  UsagePage: TUsage;\line
+{\b end};\par}
+Ruft {\f0 HidP_GetButtonsEx({\uldb ReportTypeParam\v IDH_TJvHidDevice_ReportTypeParam>Main}, {\uldb LinkCollectionParam\v IDH_TJvHidDevice_LinkCollectionParam>Main}, UsageList, UsageLength, {\uldb PreparsedData\v IDH_TJvHidDevice_PreparsedData>Main}, Report, ReportLength);} auf.\par
+Der Rückgabewert kommt von HidP_GetButtonsEx oder ist {\f0 HIDP_STATUS_NULL} falls das Gerät nicht eingesteckt ist.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_GetData}
+${\footnote $ TJvHidDevice.GetData}
+K{\footnote K TJvHidDevice,GetData;GetData,TJvHidDevice;GetData}
+A{\footnote A TJvHidDevice_GetData;GetData_Method;GetData}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.GetData\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} GetData(DataList: PHIDPData; {\b var} DataLength: ULONG; {\b var} Report; ReportLength: ULONG): NTSTATUS;}\par
+Ruft {\f0 HidP_GetData({\uldb ReportTypeParam\v IDH_TJvHidDevice_ReportTypeParam>Main}, DataList, DataLength, {\uldb PreparsedData\v IDH_TJvHidDevice_PreparsedData>Main}, Report, ReportLength);} auf.\par
+Der Rückgabewert kommt von HidP_GetData oder ist {\f0 HIDP_STATUS_NULL} falls das Gerät nicht eingesteckt ist.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_GetFeature}
+${\footnote $ TJvHidDevice.GetFeature}
+K{\footnote K TJvHidDevice,GetFeature;GetFeature,TJvHidDevice;GetFeature}
+A{\footnote A TJvHidDevice_GetFeature;GetFeature_Method;GetFeature}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.GetFeature\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} GetFeature({\b var} Report; {\b const} Size: Integer): Boolean;}\par
+Liest einen Feature-Report vom Gerät ein. Das erste Byte des Lesepuffers muss vor dem Aufruf 
+die gewünschte Report ID enthalten. 0 liest jeden Report. Dieses Byte muss bei der Länge des Reports berücksichtigt werden. 
+Ruft {\f0 HidD_GetFeature({\uldb HidFileHandle\v IDH_TJvHidDevice_HidFileHandle>Main}, Report, Size);} auf.\par
+Der Rückgabewert kommt von HidD_GetFeature oder {\uldb OpenFile\v IDH_TJvHidDevice_OpenFile>Main}.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_GetScaledUsageValue}
+${\footnote $ TJvHidDevice.GetScaledUsageValue}
+K{\footnote K TJvHidDevice,GetScaledUsageValue;GetScaledUsageValue,TJvHidDevice;GetScaledUsageValue}
+A{\footnote A TJvHidDevice_GetScaledUsageValue;GetScaledUsageValue_Method;GetScaledUsageValue}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.GetScaledUsageValue\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} GetScaledUsageValue({\b var} UsageValue: Integer; {\b var} Report; ReportLength: ULONG): NTSTATUS;}\par
+Ruft {\f0 HidP_GetScaledUsageValue({\uldb ReportTypeParam\v IDH_TJvHidDevice_ReportTypeParam>Main}, {\uldb UsagePageParam\v IDH_TJvHidDevice_UsagePageParam>Main}, {\uldb LinkCollectionParam\v IDH_TJvHidDevice_LinkCollectionParam>Main}, 
+{\uldb UsageParam\v IDH_TJvHidDevice_UsageParam>Main}, UsageValue, {\uldb PreparsedData\v IDH_TJvHidDevice_PreparsedData>Main}, Report, ReportLength);} auf.\par
+Der Rückgabewert kommt von HidP_GetScaledUsageValue oder ist {\f0 HIDP_STATUS_NULL} falls das Gerät nicht eingesteckt ist.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_GetSpecificButtonCaps}
+${\footnote $ TJvHidDevice.GetSpecificButtonCaps}
+K{\footnote K TJvHidDevice,GetSpecificButtonCaps;GetSpecificButtonCaps,TJvHidDevice;GetSpecificButtonCaps}
+A{\footnote A TJvHidDevice_GetSpecificButtonCaps;GetSpecificButtonCaps_Method;GetSpecificButtonCaps}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.GetSpecificButtonCaps\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} GetSpecificButtonCaps(ButtonCaps: PHIDPButtonCaps; {\b var} Count: WORD): NTSTATUS;}\par
+Ruft {\f0 HidP_GetSpecificButtonCaps({\uldb ReportTypeParam\v IDH_TJvHidDevice_ReportTypeParam>Main}, {\uldb UsagePageParam\v IDH_TJvHidDevice_UsagePageParam>Main}, {\uldb LinkCollectionParam\v IDH_TJvHidDevice_LinkCollectionParam>Main}, {\uldb UsageParam\v IDH_TJvHidDevice_UsageParam>Main}, ButtonCaps, Count, {\uldb PreparsedData\v IDH_TJvHidDevice_PreparsedData>Main});} auf.\par
+Der Rückgabewert kommt von HidP_GetSpecificButtonCaps oder ist {\f0 HIDP_STATUS_NULL} falls das Gerät nicht eingesteckt ist.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_GetSpecificValueCaps}
+${\footnote $ TJvHidDevice.GetSpecificValueCaps}
+K{\footnote K TJvHidDevice,GetSpecificValueCaps;GetSpecificValueCaps,TJvHidDevice;GetSpecificValueCaps}
+A{\footnote A TJvHidDevice_GetSpecificValueCaps;GetSpecificValueCaps_Method;GetSpecificValueCaps}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.GetSpecificValueCaps\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} GetSpecificValueCaps(ValueCaps: PHIDPValueCaps; {\b var} Count: WORD): NTSTATUS;}\par
+Ruft {\f0 HidP_GetSpecificValueCaps({\uldb ReportTypeParam\v IDH_TJvHidDevice_ReportTypeParam>Main}, {\uldb UsagePageParam\v IDH_TJvHidDevice_UsagePageParam>Main}, {\uldb LinkCollectionParam\v IDH_TJvHidDevice_LinkCollectionParam>Main}, {\uldb UsageParam\v IDH_TJvHidDevice_UsageParam>Main}, ValueCaps, Count, {\uldb PreparsedData\v IDH_TJvHidDevice_PreparsedData>Main});} auf.\par
+Der Rückgabewert kommt von HidP_GetSpecificValueCaps oder ist {\f0 HIDP_STATUS_NULL} falls das Gerät nicht eingesteckt ist.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_GetUsages}
+${\footnote $ TJvHidDevice.GetUsages}
+K{\footnote K TJvHidDevice,GetUsages;GetUsages,TJvHidDevice;GetUsages}
+A{\footnote A TJvHidDevice_GetUsages;GetUsages_Method;GetUsages}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.GetUsages\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} GetUsages(UsageList: PUsage; {\b var} UsageLength: ULONG; {\b var} Report; ReportLength: ULONG): NTSTATUS;}\par
+Ruft {\f0 HidP_GetUsages({\uldb ReportTypeParam\v IDH_TJvHidDevice_ReportTypeParam>Main}, {\uldb UsagePageParam\v IDH_TJvHidDevice_UsagePageParam>Main}, {\uldb LinkCollectionParam\v IDH_TJvHidDevice_LinkCollectionParam>Main}, UsageList, UsageLength, {\uldb PreparsedData\v IDH_TJvHidDevice_PreparsedData>Main}, Report, ReportLength);} auf.\par
+Der Rückgabewert kommt von HidP_GetUsages oder ist {\f0 HIDP_STATUS_NULL} falls das Gerät nicht eingesteckt ist.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_GetUsagesEx}
+${\footnote $ TJvHidDevice.GetUsagesEx}
+K{\footnote K TJvHidDevice,GetUsagesEx;GetUsagesEx,TJvHidDevice;GetUsagesEx}
+A{\footnote A TJvHidDevice_GetUsagesEx;GetUsagesEx_Method;GetUsagesEx}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.GetUsagesEx\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} GetUsagesEx(UsageList: PUsageAndPage; {\b var} UsageLength: ULONG; {\b var} Report; ReportLength: ULONG): NTSTATUS;}\par
+{\f0 TUsageAndPage = {\b record}\line
+  Usage:     TUsage;\line
+  UsagePage: TUsage;\line
+{\b end};\par}
+Ruft {\f0 HidP_GetUsagesEx({\uldb ReportTypeParam\v IDH_TJvHidDevice_ReportTypeParam>Main}, {\uldb LinkCollectionParam\v IDH_TJvHidDevice_LinkCollectionParam>Main}, UsageList, UsageLength, {\uldb PreparsedData\v IDH_TJvHidDevice_PreparsedData>Main}, Report, ReportLength);} auf.\par
+Der Rückgabewert kommt von HidP_GetUsagesEx oder ist {\f0 HIDP_STATUS_NULL} falls das Gerät nicht eingesteckt ist.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_GetUsageValue}
+${\footnote $ TJvHidDevice.GetUsageValue}
+K{\footnote K TJvHidDevice,GetUsageValue;GetUsageValue,TJvHidDevice;GetUsageValue}
+A{\footnote A TJvHidDevice_GetUsageValue;GetUsageValue_Method;GetUsageValue}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.GetUsageValue\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} GetUsageValue({\b var} UsageValue: ULONG; {\b var} Report; ReportLength: ULONG): NTSTATUS;}\par
+Ruft {\f0 HidP_GetUsageValue({\uldb ReportTypeParam\v IDH_TJvHidDevice_ReportTypeParam>Main}, {\uldb UsagePageParam\v IDH_TJvHidDevice_UsagePageParam>Main}, {\uldb LinkCollectionParam\v IDH_TJvHidDevice_LinkCollectionParam>Main}, {\uldb UsageParam\v IDH_TJvHidDevice_UsageParam>Main}, UsageValue, {\uldb PreparsedData\v IDH_TJvHidDevice_PreparsedData>Main}, Report, ReportLength);} auf.\par
+Der Rückgabewert kommt von HidP_GetUsageValue oder ist {\f0 HIDP_STATUS_NULL} falls das Gerät nicht eingesteckt ist.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_GetUsageValueArray}
+${\footnote $ TJvHidDevice.GetUsageValueArray}
+K{\footnote K TJvHidDevice,GetUsageValueArray;GetUsageValueArray,TJvHidDevice;GetUsageValueArray}
+A{\footnote A TJvHidDevice_GetUsageValueArray;GetUsageValueArray_Method;GetUsageValueArray}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.GetUsageValueArray\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} GetUsageValueArray(UsageValue: PChar; UsageValueByteLength: WORD; {\b var} Report; ReportLength: ULONG): NTSTATUS;}\par
+Ruft {\f0 HidP_GetUsageValueArray({\uldb ReportTypeParam\v IDH_TJvHidDevice_ReportTypeParam>Main}, {\uldb UsagePageParam\v IDH_TJvHidDevice_UsagePageParam>Main}, {\uldb LinkCollectionParam\v IDH_TJvHidDevice_LinkCollectionParam>Main}, {\uldb UsageParam\v IDH_TJvHidDevice_UsageParam>Main}, UsageValue, UsageValueByteLength, {\uldb PreparsedData\v IDH_TJvHidDevice_PreparsedData>Main}, Report, ReportLength);} auf.\par
+Der Rückgabewert kommt von HidP_GetUsageValueArray oder ist {\f0 HIDP_STATUS_NULL} falls das Gerät nicht eingesteckt ist.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_GetValueCaps}
+${\footnote $ TJvHidDevice.GetValueCaps}
+K{\footnote K TJvHidDevice,GetValueCaps;GetValueCaps,TJvHidDevice;GetValueCaps}
+A{\footnote A TJvHidDevice_GetValueCaps;GetValueCaps_Method;GetValueCaps}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.GetValueCaps\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} GetValueCaps(ValueCaps: PHIDPValueCaps; {\b var} Count: WORD): NTSTATUS;}\par
+Ruft {\f0 HidP_GetValueCaps({\uldb ReportTypeParam\v IDH_TJvHidDevice_ReportTypeParam>Main}, ValueCaps, Count, {\uldb PreparsedData\v IDH_TJvHidDevice_PreparsedData>Main});} auf.\par
+Der Rückgabewert kommt von HidP_GetValueCaps oder ist {\f0 HIDP_STATUS_NULL} falls das Gerät nicht eingesteckt ist.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_OpenFile}
+${\footnote $ TJvHidDevice.OpenFile}
+K{\footnote K TJvHidDevice,OpenFile;OpenFile,TJvHidDevice;OpenFile}
+A{\footnote A TJvHidDevice_OpenFile;OpenFile_Method;OpenFile}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.OpenFile\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} OpenFile: Boolean;}\par
+Öffnet den Datei-Handle {\uldb HidFileHandle\v IDH_TJvHidDevice_HidFileHandle>Main} falls er nicht bereits offen ist. 
+Die Datei wird mit {\uldb CloseFile\v IDH_TJvHidDevice_CloseFile>Main} wieder geschlossen.\par
+Die Datei wird mit Lese- und Schreibrecht geöffnet. Misslingt dies, so wird die Datei 
+{\b ohne Lese- oder Schreibrechte} geöffnet. Das erlaubt fast allen Methoden zu funktionieren, 
+obwohl das Gerät bereits exklusiv geöffnet wurde. 
+{\uldb ReadFile\v IDH_TJvHidDevice_ReadFile>Main} und 
+{\uldb WriteFile\v IDH_TJvHidDevice_WriteFile>Main} versagen natürlich, aber 
+{\uldb GetFeature\v IDH_TJvHidDevice_GetFeature>Main} und 
+{\uldb SetFeature\v IDH_TJvHidDevice_SetFeature>Main} 
+funktionieren.\par
+Der Rückgabewert ist True für eine erfolgreich geöffnete oder bereits offene Datei.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_OpenFileEx}
+${\footnote $ TJvHidDevice.OpenFileEx}
+K{\footnote K TJvHidDevice,OpenFileEx;OpenFileEx,TJvHidDevice;OpenFileEx}
+A{\footnote A TJvHidDevice_OpenFileEx;OpenFileEx_Method;OpenFileEx}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.OpenFileEx\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} OpenFileEx({\b const} Mode: {\uldb TJvHidOpenExMode\v IDH_Type_TJvHidOpenExMode>Main}): Boolean;}\par
+Öffnet entweder {\uldb HidOverlappedRead\v IDH_TJvHidDevice_HidOverlappedRead>Main} oder 
+{\uldb HidOverlappedWrite\v IDH_TJvHidDevice_HidOverlappedWrite>Main} falls sie noch geschlossen sind. 
+OpenFileEx(omhRead) öffnet {\uldb HidOverlappedRead\v IDH_TJvHidDevice_HidOverlappedRead>Main} während  
+OpenFileEx(omhWrite) {\uldb HidOverlappedWrite\v IDH_TJvHidDevice_HidOverlappedWrite>Main} öffnet.\line
+Die Datei wird mit {\uldb CloseFileEx\v IDH_TJvHidDevice_CloseFileEx>Main} wieder geschlossen.\par
+Der Rückgabewert ist True für eine erfolgreich geöffnete oder bereits offene Datei.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_ReadFile}
+${\footnote $ TJvHidDevice.ReadFile}
+K{\footnote K TJvHidDevice,ReadFile;ReadFile,TJvHidDevice;ReadFile}
+A{\footnote A TJvHidDevice_ReadFile;ReadFile_Method;ReadFile}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.ReadFile\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} ReadFile({\b var} Report; ToRead: DWORD; {\b var} BytesRead: DWORD): Boolean;}\par
+Ruft {\f0 Windows.ReadFile({\uldb HidFileHandle\v IDH_TJvHidDevice_HidFileHandle>Main}, Report, ToRead, BytesRead, {\b nil});} auf.\par
+Der Rückgabewert kommt von Windows.ReadFile oder {\uldb OpenFile\v IDH_TJvHidDevice_OpenFile>Main}.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_ReadFileEx}
+${\footnote $ TJvHidDevice.ReadFileEx}
+K{\footnote K TJvHidDevice,ReadFileEx;ReadFileEx,TJvHidDevice;ReadFileEx}
+A{\footnote A TJvHidDevice_ReadFileEx;ReadFileEx_Method;ReadFileEx}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.ReadFileEx\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} ReadFileEx({\b var} Report; ToRead: DWORD; CallBack: TPROverlappedCompletionRoutine): Boolean;}\par
+Ruft {\f0 Windows.ReadFileEx({\uldb HidOverlappedRead\v IDH_TJvHidDevice_HidOverlappedRead>Main}, Report, ToRead, Ovl, CallBack);} auf.\par
+Der Rückgabewert kommt von Windows.ReadFileEx oder {\uldb OpenFileEx\v IDH_TJvHidDevice_OpenFileEx>Main}.\line
+Ovl ist eine interne Variable. Ovl.hEvent ist mit {\f0 Ovl.hEvent := DWORD(Self);} initialisiert.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_SetButtons}
+${\footnote $ TJvHidDevice.SetButtons}
+K{\footnote K TJvHidDevice,SetButtons;SetButtons,TJvHidDevice;SetButtons}
+A{\footnote A TJvHidDevice_SetButtons;SetButtons_Method;SetButtons}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.SetButtons\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} SetButtons(UsageList: PUsage; {\b var} UsageLength: ULONG; {\b var} Report; ReportLength: ULONG): NTSTATUS;}\par
+Ruft {\f0 HidP_SetButtons({\uldb ReportTypeParam\v IDH_TJvHidDevice_ReportTypeParam>Main}, {\uldb UsagePageParam\v IDH_TJvHidDevice_UsagePageParam>Main}, {\uldb LinkCollectionParam\v IDH_TJvHidDevice_LinkCollectionParam>Main}, UsageList, UsageLength, {\uldb PreparsedData\v IDH_TJvHidDevice_PreparsedData>Main}, Report, ReportLength);} auf.\par
+Der Rückgabewert kommt von HidP_SetButtons oder ist {\f0 HIDP_STATUS_NULL} falls das Gerät nicht eingesteckt ist.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_SetData}
+${\footnote $ TJvHidDevice.SetData}
+K{\footnote K TJvHidDevice,SetData;SetData,TJvHidDevice;SetData}
+A{\footnote A TJvHidDevice_SetData;SetData_Method;SetData}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.SetData\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} SetData(DataList: PHIDPData; {\b var} DataLength: ULONG; {\b var} Report; ReportLength: ULONG): NTSTATUS;}\par
+Ruft {\f0 HidP_SetData({\uldb ReportTypeParam\v IDH_TJvHidDevice_ReportTypeParam>Main}, DataList, DataLength, {\uldb PreparsedData\v IDH_TJvHidDevice_PreparsedData>Main}, Report, ReportLength);} auf.\par
+Der Rückgabewert kommt von HidP_SetData oder ist {\f0 HIDP_STATUS_NULL} falls das Gerät nicht eingesteckt ist.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_SetFeature}
+${\footnote $ TJvHidDevice.SetFeature}
+K{\footnote K TJvHidDevice,SetFeature;SetFeature,TJvHidDevice;SetFeature}
+A{\footnote A TJvHidDevice_SetFeature;SetFeature_Method;SetFeature}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.SetFeature\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} SetFeature({\b var} Report; {\b const} Size: Integer): Boolean;}\par
+Schreibt einen Feature-Report auf das Gerät. Das erste Byte des Reports muss die gewünschte Report ID enthalten. 
+Die Report ID zählt zur Länge des Reports.\par
+Ruft {\f0 HidD_SetFeature({\uldb HidFileHandle\v IDH_TJvHidDevice_HidFileHandle>Main}, Report, Size);} auf.\par
+Der Rückgabewert kommt von HidD_SetFeature oder {\uldb OpenFile\v IDH_TJvHidDevice_OpenFile>Main}.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_SetScaledUsageValue}
+${\footnote $ TJvHidDevice.SetScaledUsageValue}
+K{\footnote K TJvHidDevice,SetScaledUsageValue;SetScaledUsageValue,TJvHidDevice;SetScaledUsageValue}
+A{\footnote A TJvHidDevice_SetScaledUsageValue;SetScaledUsageValue_Method;SetScaledUsageValue}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.SetScaledUsageValue\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} function SetScaledUsageValue(UsageValue: Integer; {\b var} Report; ReportLength: ULong): NTSTATUS;}\par
+Ruft {\f0 HidP_SetScaledUsageValue({\uldb ReportTypeParam\v IDH_TJvHidDevice_ReportTypeParam>Main}, {\uldb UsagePageParam\v IDH_TJvHidDevice_UsagePageParam>Main}, {\uldb LinkCollectionParam\v IDH_TJvHidDevice_LinkCollectionParam>Main}, {\uldb UsageParam\v IDH_TJvHidDevice_UsageParam>Main}, UsageValue, {\uldb PreparsedData\v IDH_TJvHidDevice_PreparsedData>Main}, Report, ReportLength);} auf.\par
+Der Rückgabewert kommt von HidP_SetScaledUsageValue oder ist {\f0 HIDP_STATUS_NULL} falls das Gerät nicht eingesteckt ist.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_SetUsages}
+${\footnote $ TJvHidDevice.SetUsages}
+K{\footnote K TJvHidDevice,SetUsages;SetUsages,TJvHidDevice;SetUsages}
+A{\footnote A TJvHidDevice_SetUsages;SetUsages_Method;SetUsages}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.SetUsages\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} SetUsages(UsageList: PUsage; {\b var} UsageLength: ULong; {\b var} Report; ReportLength: ULong): NTSTATUS;}\par
+Ruft {\f0 HidP_SetUsages({\uldb ReportTypeParam\v IDH_TJvHidDevice_ReportTypeParam>Main}, {\uldb UsagePageParam\v IDH_TJvHidDevice_UsagePageParam>Main}, {\uldb LinkCollectionParam\v IDH_TJvHidDevice_LinkCollectionParam>Main}, UsageList, UsageLength, {\uldb PreparsedData\v IDH_TJvHidDevice_PreparsedData>Main}, Report, ReportLength);} auf.\par
+Der Rückgabewert kommt von HidP_SetUsages oder ist {\f0 HIDP_STATUS_NULL} falls das Gerät nicht eingesteckt ist.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_SetUsageValue}
+${\footnote $ TJvHidDevice.SetUsageValue}
+K{\footnote K TJvHidDevice,SetUsageValue;SetUsageValue,TJvHidDevice;SetUsageValue}
+A{\footnote A TJvHidDevice_SetUsageValue;SetUsageValue_Method;SetUsageValue}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.SetUsageValue\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Decklaration\b0\par
+{\f0 {\b function} SetUsageValue(UsageValue: ULONG; {\b var} Report; ReportLength: ULONG): NTSTATUS;}\par
+Ruft {\f0 HidP_SetUsageValue({\uldb ReportTypeParam\v IDH_TJvHidDevice_ReportTypeParam>Main}, {\uldb UsagePageParam\v IDH_TJvHidDevice_UsagePageParam>Main}, {\uldb LinkCollectionParam\v IDH_TJvHidDevice_LinkCollectionParam>Main}, {\uldb UsageParam\v IDH_TJvHidDevice_UsageParam>Main}, UsageValue, {\uldb PreparsedData\v IDH_TJvHidDevice_PreparsedData>Main}, Report, ReportLength);} auf.\par
+Der Rückgabewert kommt von HidP_SetUsageValue oder ist {\f0 HIDP_STATUS_NULL} falls das Gerät nicht eingesteckt ist.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_SetUsageValueArray}
+${\footnote $ TJvHidDevice.SetUsageValueArray}
+K{\footnote K TJvHidDevice,SetUsageValueArray;SetUsageValueArray,TJvHidDevice;SetUsageValueArray}
+A{\footnote A TJvHidDevice_SetUsageValueArray;SetUsageValueArray_Method;SetUsageValueArray}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.SetUsageValueArray\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} SetUsageValueArray(UsageValue: PChar; UsageValueByteLength: WORD; {\b var} Report; ReportLength: ULONG): NTSTATUS;}\par
+Ruft {\f0 HidP_SetUsageValueArray({\uldb ReportTypeParam\v IDH_TJvHidDevice_ReportTypeParam>Main}, {\uldb UsagePageParam\v IDH_TJvHidDevice_UsagePageParam>Main}, {\uldb LinkCollectionParam\v IDH_TJvHidDevice_LinkCollectionParam>Main}, {\uldb UsageParam\v IDH_TJvHidDevice_UsageParam>Main}, UsageValue, UsageValueByteLength, {\uldb PreparsedData\v IDH_TJvHidDevice_PreparsedData>Main}, Report, ReportLength);} auf.\par
+Der Rückgabewert kommt von HidP_SetUsageValueArray oder ist {\f0 HIDP_STATUS_NULL} falls das Gerät nicht eingesteckt ist.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_UnsetButtons}
+${\footnote $ TJvHidDevice.UnsetButtons}
+K{\footnote K TJvHidDevice,UnsetButtons;UnsetButtons,TJvHidDevice;UnsetButtons}
+A{\footnote A TJvHidDevice_UnsetButtons;UnsetButtons_Method;UnsetButtons}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.UnsetButtons\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} UnsetButtons(UsageList: PUsage; {\b var} UsageLength: ULONG; {\b var} Report; ReportLength: ULONG): NTSTATUS;}\par
+Ruft {\f0 HidP_UnsetButtons({\uldb ReportTypeParam\v IDH_TJvHidDevice_ReportTypeParam>Main}, {\uldb UsagePageParam\v IDH_TJvHidDevice_UsagePageParam>Main}, {\uldb LinkCollectionParam\v IDH_TJvHidDevice_LinkCollectionParam>Main}, UsageList, UsageLength, {\uldb PreparsedData\v IDH_TJvHidDevice_PreparsedData>Main}, Report, ReportLength);} auf.\par
+Der Rückgabewert kommt von HidP_UnsetButtons oder ist {\f0 HIDP_STATUS_NULL} falls das Gerät nicht eingesteckt ist.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_UnsetUsages}
+${\footnote $ TJvHidDevice.UnsetUsages}
+K{\footnote K TJvHidDevice,UnsetUsages;UnsetUsages,TJvHidDevice;UnsetUsages}
+A{\footnote A TJvHidDevice_UnsetUsages;UnsetUsages_Method;UnsetUsages}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.UnsetUsages\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} UnsetUsages(UsageList: PUsage; {\b var} UsageLength: ULONG; {\b var} Report; ReportLength: ULONG): NTSTATUS;}\par
+Ruft {\f0 HidP_UnsetUsages({\uldb ReportTypeParam\v IDH_TJvHidDevice_ReportTypeParam>Main}, {\uldb UsagePageParam\v IDH_TJvHidDevice_UsagePageParam>Main}, {\uldb LinkCollectionParam\v IDH_TJvHidDevice_LinkCollectionParam>Main}, UsageList, UsageLength, {\uldb PreparsedData\v IDH_TJvHidDevice_PreparsedData>Main}, Report, ReportLength);} auf.\par
+Der Rückgabewert kommt von HidP_UnsetUsages oder ist {\f0 HIDP_STATUS_NULL} falls das Gerät nicht eingesteckt ist.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_WriteFile}
+${\footnote $ TJvHidDevice.WriteFile}
+K{\footnote K TJvHidDevice,WriteFile;WriteFile,TJvHidDevice;WriteFile}
+A{\footnote A TJvHidDevice_WriteFile;WriteFile_Method;WriteFile}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.WriteFile\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} WriteFile({\b var} Report; ToWrite: DWORD; {\b var} BytesWritten: DWORD): Boolean;}\par
+Ruft {\f0 Windows.WriteFile({\uldb HidFileHandle\v IDH_TJvHidDevice_HidFileHandle>Main}, Report, ToWrite, BytesWritten, {\b nil});} auf.\par
+Der Rückgabewert kommt von HidP_UnsetUsages oder ist {\f0 HIDP_STATUS_NULL} falls das Gerät nicht eingesteckt ist.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_WriteFileEx}
+${\footnote $ TJvHidDevice.WriteFileEx}
+K{\footnote K TJvHidDevice,WriteFileEx;WriteFileEx,TJvHidDevice;WriteFileEx}
+A{\footnote A TJvHidDevice_WriteFileEx;WriteFileEx_Method;WriteFileEx}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.WriteFileEx\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} WriteFileEx({\b var} Report; ToWrite: DWORD; CallBack: TPROverlappedCompletionRoutine): Boolean;}\par
+Ruft {\f0 Windows.WriteFileEx({\uldb HidOverlappedWrite\v IDH_TJvHidDevice_HidOverlappedWrite>Main}, Report, ToWrite, Ovl, CallBack);} auf.\par
+Der Rückgabewert kommt von Windows.WriteFileEx oder {\uldb OpenFileEx\v IDH_TJvHidDevice_OpenFile>Main}. 
+Ovl ist eine interne Variable. Ovl.hEvent ist mit {\f0 Ovl.hEvent := DWORD(Self);} initialisiert.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_CheckOut}
+${\footnote $ TJvHidDevice.CheckOut}
+K{\footnote K TJvHidDevice,CheckOut;CheckOut,TJvHidDevice;CheckOut}
+A{\footnote A TJvHidDevice_CheckOut;CheckOut_Method;CheckOut}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.CheckOut\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} CheckOut: Boolean;}\par
+Mit Checkout kann man das Device innerhalb von z. B. des 
+{\uldb OnEnumerate\v IDH_TJvHidDeviceController_OnEnumerate>Main}-Events auschecken.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_GetExtendedAttributes}
+${\footnote $ TJvHidDevice.GetExtendedAttributes}
+K{\footnote K TJvHidDevice,GetExtendedAttributes;GetExtendedAttributes,TJvHidDevice;GetExtendedAttributes}
+A{\footnote A TJvHidDevice_GetExtendedAttributes;GetExtendedAttributes_Method;GetExtendedAttributes}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.GetExtendedAttributes\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} CheckOut: Boolean;}\par
+{\f0 {\b function} GetExtendedAttributes(ReportType: THIDPReportType; DataIndex: Word; 
+Attributes: PHIDPExtendedAttributes; {\b var} LengthAttributes: ULONG): NTSTATUS;}\par
+Die Methode ruft die HID-Funktion HidP_GetExtendedAttributes auf. Da die Funktion erst in 
+Windows 2000 eingeführt wurde, schlägt sie für Windows 9x fehl.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_InitializeReportForID}
+${\footnote $ TJvHidDevice.InitializeReportForID}
+K{\footnote K TJvHidDevice,InitializeReportForID;InitializeReportForID,TJvHidDevice;InitializeReportForID}
+A{\footnote A TJvHidDevice_InitializeReportForID;InitializeReportForID_Method;InitializeReportForID}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.InitializeReportForID\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} InitializeReportForID(ReportType: THIDPReportType; ReportID: Byte; 
+{\b var} Report; ReportLength: ULONG): NTSTATUS;}\par
+Die Methode ruft die HID-Funktion HidP_InitializeReportForID auf. Da die Funktion erst in 
+Windows 2000 eingeführt wurde, schlägt sie für Windows 9x fehl.\par
+Die Funktion initialisiert Report auf leere Werte. Die Usages des Reports können 
+von Null verschiedene Werte als Leerwert haben.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_GetInputReport}
+${\footnote $ TJvHidDevice.GetInputReport}
+K{\footnote K TJvHidDevice,GetInputReport;GetInputReport,TJvHidDevice;GetInputReport}
+A{\footnote A TJvHidDevice_GetInputReport;GetInputReport_Method;GetInputReport}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.GetInputReport\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} GetInputReport({\b var} Report; {\b const} Size: ULONG): Boolean;}\par
+Die Methode ruft die HID-Funktion HidD_GetInputReportauf. Da die Funktion erst in 
+Windows XP eingeführt wurde, schlägt sie für Windows 9x und 2000 fehl.\par
+Es wird ein bestimmter Repoirt vom Gerät gelesen. Damit dies gelingt, muss 
+die ReportID von Report vor dem Aufruf auf den richtigen Wert gesetzt werden.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_SetOutputReport}
+${\footnote $ TJvHidDevice.SetOutputReport}
+K{\footnote K TJvHidDevice,SetOutputReport;SetOutputReport,TJvHidDevice;SetOutputReport}
+A{\footnote A TJvHidDevice_SetOutputReport;SetOutputReport_Method;SetOutputReport}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.SetOutputReport\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} SetOutputReport({\b var} Report; {\b const} Size: ULONG): Boolean;}\par
+Die Methode ruft die HID-Funktion HidD_GetInputReportauf. Da die Funktion erst in 
+Windows XP eingeführt wurde, schlägt sie für Windows 9x und 2000 fehl.\par
+Es wird der Report geschrieben. Der Unterschied zu {\uldb WriteFile\v IDH_TJvHidDevice_WriteFile>Main} 
+ist das immer USB Output Transfers benutzt werden. WriteFile kann auch Control Transfers nutzen.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_OnData}
+${\footnote $ TJvHidDevice.OnData}
+K{\footnote K TJvHidDevice,OnData;OnData,TJvHidDevice;OnData}
+A{\footnote A TJvHidDevice_OnData;OnData_Event;OnData}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.OnData\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Declaration\b0\par
+{\f0 TJvHidDataEvent = {\b procedure}({\b const} HidDev: {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}; ReportID: Byte; 
+{\b const} Data: Pointer; Size: Word) {\b of} {\b object};}\par
+Zur Implementation des Events wird ein Thread gestartet, der permanent das Gerät liest. 
+Jeder ankommende Report löst den Event aus. Der Thread läuft nur solange das Gerät ausgecheckt ist.\par
+{\f0 HidDev} benennt das sendende Gerät. {\f0 ReportID} sagt welcher Report gelesen wurde. Der Wert #0 besagt das es nur eine Reportart gibt. 
+{\f0 Data} enthält den Report selbst. {\f0 Size} gibt die Anzahl Bytes im Report an.\par
+Der in {\f0 Data} übergebene Bereich wird bei jedem Event neu überschrieben.\par
+Der Thread wird gestartet wenn das Gerät ausgecheckt wird und der Event via {\uldb OnDeviceData\v IDH_TJvHidDeviceController_OnDeviceData>Main} 
+bereits zugewiesen ist oder bei Zuweisung an ein bereits ausgeschecktes Geräteobjekt. Der Thread wird nicht für eingecheckte Geräte gestartet, 
+die mit {\uldb Enumerate\v IDH_TJvHidDeviceController_Enumerate>Main} aufgezählt werden. Zusätzlich wird der Thread nicht gestartet falls 
+{\uldb HasReadWriteAccess\v IDH_TJvHidDevice_HasReadWriteAccess>Main} den Wert {\f0 False} hat. 
+Der Thread wird beim Check-In oder Free beendet.\par
+{\uldb ThreadSleepTime\v IDH_TJvHidDevice_ThreadSleepTime>Main} wird benutzt, um den Thread regelmässig aufzuwecken während auf Daten 
+gewartet wird. Dies erlaubt es den Thread jederzeit zu beenden, ohne das Daten gelesen wurden.\par
+Der Event kann global mit {\uldb OnDeviceData\v IDH_TJvHidDeviceController_OnDeviceData>Main} zugewiesen werden oder individuell zur Laufzeit.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_OnDataError}
+${\footnote $ TJvHidDevice.OnDataError}
+K{\footnote K TJvHidDevice,OnDataError;OnDataError,TJvHidDevice;OnDataError}
+A{\footnote A TJvHidDevice_OnDataError;OnDataError_Event;OnDataError}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.OnDataError\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Declaration\b0\par
+{\f0 TJvHidDataErrorEvent = {\b procedure}({\b const} HidDev: {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}; 
+Error: DWORD) {\b of} {\b object};}\par
+Der Event tritt auf wenn die Implementation von {\uldb OnData\v IDH_TJvHidDevice_OnData>Main} 
+einen Lesefehler des ReadFileEx-Aufrufs erleidet. 
+Die Parameter des Events sind das Gerät das den lesefehler erlitten hat und der mittels 
+GetLastError ermittelte Fehlercode.
+Der Event kann global mit {\uldb OnDeviceDataError\v IDH_TJvHidDeviceController_OnDeviceDataError>Main} zugewiesen werden oder individuell zur Laufzeit.
+\par\page
+
+#{\footnote # IDH_TJvHidDevice_OnUnplug}
+${\footnote $ TJvHidDevice.OnUnplug}
+K{\footnote K TJvHidDevice,OnUnplug;OnUnplug,TJvHidDevice;OnUnplug}
+A{\footnote A TJvHidDevice_OnUnplug;OnUnplug_Event;OnUnplug}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDevice.OnUnplug\b0}   \line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 TJvHidUnplugEvent = {\b procedure}(HidDev: {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}) {\b of} {\b object};}\par
+Der Event feuert nach dem Ausstecken des Gerätes. Er wird auch für eingecheckte Geräte gesendet. 
+Das Gerät ist bereits im ausgesteckten Zustand und kein Methodenaufruf funktioniert mehr.\line
+Der Event kann zur Runtime individuell oder für alle Geräte in der IDE mittels 
+{\uldb OnDeviceUnplug\v IDH_TJvHidDeviceController_OnDeviceUnplug>Main} zugewiesen werden.
+\par\page
+
+#{\footnote # IDH_Class_TJvHidDeviceController}
+${\footnote $ TJvHidDeviceController}
+K{\footnote K TJvHidDeviceController}
+A{\footnote A TJvHidDeviceController_Object;TJvHidDeviceController}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\f1\fs28  \cf2 TJvHidDeviceController Object}\line
+{\fs20{\ul Hierarchie\v IDH_Anym_3FAMT_2}    {\uldb Properties\v pme_cp_TJvHidDeviceController>pme}   {\uldb Methoden\v pme_cm_TJvHidDeviceController>pme}   {\uldb Events\v pme_ce_TJvHidDeviceController>pme}\tab{\uldb Andere\v pme_ce_Other>pme}}\par\pard}
+\b Deklaration\b0\par
+{\f0 TJvHidDeviceController = \b class\b0 (TComponent)}\par\pard\sa0\sb0{
+#{\footnote # IDH_ClassTopic_TJvHidDeviceController_Properties}}
+Die Aufgabe eines TJvHidDeviceControllers ist es, TJvHidDevice-Objekte zu verwalten. 
+Jedes eingesteckte HID-Gerät wird durch ein TJvHidDevice-Objekt repräsentiert. 
+Der Controller überwacht das Ein- und Ausstecken von Geräten und erzeugt nötigenfalls die Objekte. 
+Beim Ausstecken wird das Objekt nicht zerstört, sondern nur stillgelegt.\line
+Die Methoden des TJvHidDeviceController erlauben es, sich TJvHidDevice-Objekte nach verschiedenen 
+Kriterien aushändigen zu lassen.\line
+Es ist nur ein TJvHidDeviceController pro Programm nötig. Konsequenterweise löst das Droppen 
+eines zweiten TJvHidDeviceController eine Exception aus, damit Sie es auch nicht vergessen.\par
+Die Komponente funktioniert auch unter Windows 95 und NT, die beide keine USB-Unterstützung haben. 
+Die Komponente findet einfach nie ein HID-Gerät zum Verwalten. Dies ist interessant für 
+Programme, die auch Nicht-HID-Geräte nutzen. Sound-Geräte sind ein Beispiel dafür.
+\par\page
+
+#{\footnote # pme_cp_TJvHidDeviceController}
+${\footnote $ Properties von TJvHidDeviceController}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\f1\fs20\cf2\b{\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController>Main} Properties\b0}\line
+{\fs20{\ul Legende\v IDH_Legend}}\par\pard}
+{\f1\tx300\b In TJvHidDeviceController\b0\line
+\{bmct published.bmp\}\tab{\uldb DevThreadSleepTime\v IDH_TJvHidDeviceController_DevThreadSleepTime>Main}\line
+\{bmct readonly.bmp\}\tab{\uldb HidGuid\v IDH_TJvHidDeviceController_HidGuid>Main}\line
+\{bmct readonly.bmp\}\tab{\uldb NumCheckedInDevices\v IDH_TJvHidDeviceController_NumCheckedInDevices>Main}\line
+\{bmct readonly.bmp\}\tab{\uldb NumCheckedOutDevices\v IDH_TJvHidDeviceController_NumCheckedOutDevices>Main}\line
+\{bmct readonly.bmp\}\tab{\uldb NumUnpluggedDevices\v IDH_TJvHidDeviceController_NumUnpluggedDevices>Main}\line
+\{bmct published.bmp\}\tab{\uldb Version\v IDH_TJvHidDeviceController_Version>Main}
+}\par\page
+
+#{\footnote # pme_cm_TJvHidDeviceController}
+${\footnote $ Methoden von TJvHidDeviceController}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\f1\fs20\cf2\b{\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController>Main} Methoden\b0}\line
+{\fs20{\ul Legende\v IDH_Legend}}\par\pard}
+{\f1\tx300\b In TJvHidDeviceController\b0\line
+\{bmct empty.bmp\}\tab{\uldb CheckIn\v IDH_TJvHidDeviceController_CheckIn>Main}\line
+\{bmct empty.bmp\}\tab{\uldb CheckOut\v IDH_TJvHidDeviceController_CheckOut>Main}\line
+\{bmct empty.bmp\}\tab{\uldb CheckOutByClass\v IDH_TJvHidDeviceController_CheckOutByClass>Main}\line
+\{bmct empty.bmp\}\tab{\uldb CheckOutByID\v IDH_TJvHidDeviceController_CheckOutByID>Main}\line
+\{bmct empty.bmp\}\tab{\uldb CheckOutByIndex\v IDH_TJvHidDeviceController_CheckOutByIndex>Main}\line
+\{bmct empty.bmp\}\tab{\uldb CheckOutByProductName\v IDH_TJvHidDeviceController_CheckOutByProductName>Main}\line
+\{bmct empty.bmp\}\tab{\uldb CheckOutByVendorName\v IDH_TJvHidDeviceController_CheckOutByVendorName>Main}\line
+\{bmct empty.bmp\}\tab{\uldb CheckOutByCallback\v IDH_TJvHidDeviceController_CheckOutByCallback>Main}\line
+\{bmct empty.bmp\}\tab{\uldb Create\v IDH_TJvHidDeviceController_Create>Main}\line
+\{bmct empty.bmp\}\tab{\uldb CountByClass\v IDH_TJvHidDeviceController_CountByClass>Main}\line
+\{bmct empty.bmp\}\tab{\uldb CountByID\v IDH_TJvHidDeviceController_CountByID>Main}\line
+\{bmct empty.bmp\}\tab{\uldb CountByProductName\v IDH_TJvHidDeviceController_CountByProductName>Main}\line
+\{bmct empty.bmp\}\tab{\uldb CountByVendorName\v IDH_TJvHidDeviceController_CountByVendorName>Main}\line
+\{bmct empty.bmp\}\tab{\uldb CountByCallback\v IDH_TJvHidDeviceController_CountByCallback>Main}\line
+\{bmct empty.bmp\}\tab{\uldb DeviceChange\v IDH_TJvHidDeviceController_DeviceChange>Main}\line
+\{bmct empty.bmp\}\tab{\uldb Destroy\v IDH_TJvHidDeviceController_Destroy>Main}\line
+\{bmct empty.bmp\}\tab{\uldb Enumerate\v IDH_TJvHidDeviceController_Enumerate>Main}\line
+\{bmct empty.bmp\}\tab{\uldb HidVersion\v IDH_TJvHidDeviceController_HidVersion>Main}
+}\par\page
+
+#{\footnote # pme_ce_TJvHidDeviceController}
+${\footnote $ Events von TJvHidDeviceController}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\f1\fs20\cf2\b{\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController>Main} Events\b0}\line
+{\fs20{\ul Legende\v IDH_Legend}}\par\pard}
+{\f1\tx300\b In TJvHidDeviceController\b0\line
+\{bmct Published.bmp\}\tab{\uldb OnArrival\v IDH_TJvHidDeviceController_OnArrival>Main}\line
+\{bmct Published.bmp\}\tab{\uldb OnDeviceChange\v IDH_TJvHidDeviceController_OnDeviceChange>Main}\line
+\{bmct Published.bmp\}\tab{\uldb OnDeviceData\v IDH_TJvHidDeviceController_OnDeviceData>Main}\line
+\{bmct Published.bmp\}\tab{\uldb OnDeviceDataError\v IDH_TJvHidDeviceController_OnDeviceDataError>Main}\line
+\{bmct Published.bmp\}\tab{\uldb OnDeviceUnplug\v IDH_TJvHidDeviceController_OnDeviceUnplug>Main}\line
+\{bmct Published.bmp\}\tab{\uldb OnEnumerate\v IDH_TJvHidDeviceController_OnEnumerate>Main}\line
+\{bmct Published.bmp\}\tab{\uldb OnRemoval\v IDH_TJvHidDeviceController_OnRemoval>Main}
+}\par\page
+
+#{\footnote # pme_ce_Other}
+${\footnote $ restliche HID-Funktionen}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\f1\fs20\cf2\b{\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController>Main} restliche Funktionen\b0}\line
+{\fs20{\ul Legende\v IDH_Legend}}\par\pard}
+{\f1\tx300\b Nicht in die Komponente integrierte HID-Funktionen\b0\line
+{\uldb HidD_Hello\v Other_HidD_Hello>Main}\line
+{\uldb HidP_UsageListDifference\v Other_HidP_UsageListDifference>Main}\line
+{\uldb HidP_TranslateUsagesToI8042ScanCodes\v Other_HidP_TranslateUsagesToI8042ScanCodes>Main}\line
+}\par\page
+
+#{\footnote # Other_HidD_Hello}
+${\footnote $ HidD_Hello}
+K{\footnote K HidD_Hello}
+A{\footnote A HidD_Hello}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b HidD_Hello\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} HidD_Hello(Buffer: PChar; BufferLength: ULONG): ULONG; {\b stdcall};}\par
+Die undokumentierte Osterei-Funktion des HID-API. 
+Sie füllt Buffer mit dem C-String\line
+{\f0   'Hello\\nI hate Jello\\n'}\line
+und liefert die Anzahl kopierter Bytes (StrLen(Buffer)+1 = 20).\par
+Die Parameter werden nicht vollständig geprüft. 
+Mit {\f0\b nil} als Parameter gibt es eine Access Violation. 
+Ist der Puffer kürzer als 20 Zeichen, so liefert die Funktion trotzdem 20, 
+aber schreibt nicht über das Pufferende.
+\par\page
+
+#{\footnote # Other_HidP_UsageListDifference}
+${\footnote $ HidP_UsageListDifference}
+K{\footnote K HidP_UsageListDifference}
+A{\footnote A HidP_UsageListDifference}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b HidP_UsageListDifference\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} HidP_UsageListDifference(PreviousUsageList: PUsage;\line
+  CurrentUsageList: PUsage; BreakUsageList: PUsage;\line
+  MakeUsageList: PUsage; UsageListLength: ULONG): NTSTATUS; {\b stdcall};}\par
+Es wird die Mengendifferenz der beiden Usage-Listen gebildet. 
+In BreakUsageList kommen alle Usages, die in PreviousUsageList sind, aber nicht in CurrentUsageList. 
+In MakeUsageList ist es genau umgekehrt. 
+Die UsageListLength gilt für alle Listen und und sollte die Länge der längeren der beiden Listen sein. 
+Eine Usage mit dem Wert 0 kennzeichnet das Ende der Listen.
+\par\page
+
+#{\footnote # Other_HidP_TranslateUsagesToI8042ScanCodes}
+${\footnote $ HidP_TranslateUsagesToI8042ScanCodes}
+K{\footnote K HidP_TranslateUsagesToI8042ScanCodes}
+A{\footnote A HidP_TranslateUsagesToI8042ScanCodes}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b HidP_TranslateUsagesToI8042ScanCodes\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} HidP_TranslateUsagesToI8042ScanCodes(\line
+  ChangedUsageList: PUsage;\line
+  UsageListLength: ULONG;\line
+  KeyAction: THIDPKeyboardDirection;\line
+  var ModifierState: THIDPKeyboardModifierState;\line
+  InsertCodesProcedure: THIDPInsertScanCodes;\line
+  InsertCodesContext: Pointer): NTSTATUS; {\b stdcall};}\par
+Diese Funktion ist undokumentiert und als intern gekennzeichnet. Es scheint die 
+Hilfsfunktion für den Tastatur-Klassentreiber von Windows zu sein. Es werden die 
+USB-Tastencodes in PS/2-Tastencodes umgesetzt.
+\par\page
+
+#{\footnote # pme_ce_Utilities}
+${\footnote $ Hilfsfunktionen zu TJvHidDevice}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\f1\fs20\cf2\b{\uldb TJvHidDevice\v IDH_Class_TJvHidDevice>Main} Hilfsfunktionen\b0}\line
+{\fs20{\ul Legende\v IDH_Legend}}\par\pard}
+{\f1\tx300\b Hilfsfunktionen von TJvHidDevice\b0\line
+{\uldb HidCheck\v Utilities_HidCheck>Main}\line
+{\uldb HidError\v Utilities_HidError>Main}\line
+{\uldb HidErrorString\v Utilities_HidErrorString>Main}\line
+}\par\page
+
+#{\footnote # Utilities_HidCheck}
+${\footnote $ HidCheck}
+K{\footnote K HidCheck}
+A{\footnote A HidCheck}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b HidCheck\b0}\line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} HidCheck({\b const} RetVal: NTSTATUS): NTSTATUS; {\b overload};\line
+{\b function} HidCheck({\b const} RetVal: LongBool): LongBool; {\b overload};}\par
+Diese beiden Funktionen prüfen die Rückgabewerte der HID-Funktionen bzw TJvHidDevice-Methoden 
+auf Fehlerwerte. Im Fehlerfall wird eine Exception durch den Aufruf von 
+{\uldb HidError\v Utilities_HidError} erzeugt. Der Rückgabewert ist immer RetVal.
+\par\page
+
+#{\footnote # Utilities_HidError}
+${\footnote $ HidError}
+K{\footnote K HidError}
+A{\footnote A HidError}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b HidError\b0}\line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} HidError({\b const} RetVal: NTSTATUS): NTSTATUS;}\par
+HidError erzeugt eine Exception mit dem passenden Fehlertext, falls der Wert von 
+RetVal einem HID-Fehler entspricht. Der Rückgabewert ist immer RetVal.
+\par\page
+
+#{\footnote # Utilities_HidErrorString}
+${\footnote $ HidErrorString}
+K{\footnote K HidErrorString}
+A{\footnote A HidErrorString}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b HidErrorString\b0}\line
+{\fs20    {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} HidErrorString({\b const} RetVal: NTSTATUS): {\b string};}\par
+HidErrorString gibt den passenden Fehlertext zurück, falls der Wert von 
+RetVal einem HID-Fehler entspricht. Alle anderen Werte liefern einen Leerstring.
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_DevThreadSleepTime}
+${\footnote $ TJvHidDeviceController.DevThreadSleepTime}
+K{\footnote K TJvHidDeviceController,DevThreadSleepTime;DevThreadSleepTime,TJvHidDeviceController;DevThreadSleepTime}
+A{\footnote A TJvHidDeviceController_DevThreadSleepTime;DevThreadSleepTime_Property;DevThreadSleepTime}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.DevThreadSleepTime\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Declaration\b0\par
+{\f0 {\b property} DevThreadSleepTime: Integer;}\par
+Diese Property ist nicht für den TJvHidDeviceController, sondern wird auf den {\uldb ThreadSleepTime\v IDH_TJvHidDevice_ThreadSleepTime>Main} 
+der verwalteten TJvHidDevice-Objekte übertragen. Dies erlaubt es den ThreadSleepTime-Wert aller TJvHidDevice-Objekte zur 
+Design-Zeit zu setzen.\line
+Wird DevThreadSleepTime zur Laufzeit gesetzt, so werden nur die TJvHidDevice-Objekte zugewiesen, deren ThreadSleepTime den 
+gleichen Wert wie die vorher gültige DevThreadSleepTime hat. Damit bleiben alle Objekte unverändert, deren 
+ThreadSleepTime individuell geändert wurde.
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_HidGuid}
+${\footnote $ TJvHidDeviceController.HidGuid}
+K{\footnote K TJvHidDeviceController,HidGuid;HidGuid,TJvHidDeviceController;HidGuid}
+A{\footnote A TJvHidDeviceController_HidGuid;HidGuid_Property;HidGuid}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.HidGuid\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Declaration\b0\par
+{\f0 {\b property} HidGuid: TGUID;}\par
+Die GUID des HID-Stacks von Windows. Die Property ist eher der Vollständigkeit 
+halber vorhanden. Sie wird auch unter Windows 95 und NT gesetzt.
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_NumCheckedInDevices}
+${\footnote $ TJvHidDeviceController.NumCheckedInDevices}
+K{\footnote K TJvHidDeviceController,NumCheckedInDevices;NumCheckedInDevices,TJvHidDeviceController;NumCheckedInDevices}
+A{\footnote A TJvHidDeviceController_NumCheckedInDevices;NumCheckedInDevices_Property;NumCheckedInDevices}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.NumCheckedInDevices\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} NumCheckedInDevices: Integer;}\par
+Die Anzahl der nicht ausgehändigten HID-Objekte. 
+{\uldb NumCheckedInDevices\v IDH_TJvHidDeviceController_NumCheckedInDevices} + 
+{\uldb NumCheckedOutDevices\v IDH_TJvHidDeviceController_NumCheckedOutDevices} ergibt die Anzahl aller verwalteten Geräte.
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_NumCheckedOutDevices}
+${\footnote $ TJvHidDeviceController.NumCheckedOutDevices}
+K{\footnote K TJvHidDeviceController,NumCheckedOutDevices;NumCheckedOutDevices,TJvHidDeviceController;NumCheckedOutDevices}
+A{\footnote A TJvHidDeviceController_NumCheckedOutDevices;NumCheckedOutDevices_Property;NumCheckedOutDevices}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.NumCheckedOutDevices\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} NumCheckedOutDevices: Integer;}\par
+Die Anzahl der ausgehändigten HID-Objekte. 
+{\uldb NumCheckedInDevices\v IDH_TJvHidDeviceController_NumCheckedInDevices} + 
+{\uldb NumCheckedOutDevices\v IDH_TJvHidDeviceController_NumCheckedOutDevices} ergibt die Anzahl aller verwalteten Geräte.
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_NumUnpluggedDevices}
+${\footnote $ TJvHidDeviceController.NumUnpluggedDevices}
+K{\footnote K TJvHidDeviceController,NumUnpluggedDevices;NumUnpluggedDevices,TJvHidDeviceController;NumUnpluggedDevices}
+A{\footnote A TJvHidDeviceController_NumUnpluggedDevices;NumUnpluggedDevices_Property;NumUnpluggedDevices}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.NumUnpluggedDevices\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} NumUnpluggedDevices: Integer;}\par
+Die Anzahl der herausgegebenen Objekte, deren Gerät ausgesteckt wurde.\line
+{\uldb NumCheckedOutDevices\v IDH_TJvHidDeviceController_NumCheckedOutDevices} zählt diese Objekte nicht.
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_Version}
+${\footnote $ TJvHidDeviceController.Version}
+K{\footnote K TJvHidDeviceController,Version;Version,TJvHidDeviceController;Version}
+A{\footnote A TJvHidDeviceController_Version;Version_Property;Version}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.Version\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b property} Version: {\b string};}\par
+Der Versionsstring zeigt die Version der Komponente. Er wird nicht in der .dfm-Datei abgespeichert. 
+Er dient hauptsächlich zur bequemen Anzeige der Version der Komponente in der IDE.
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_CheckIn}
+${\footnote $ TJvHidDeviceController.CheckIn}
+K{\footnote K TJvHidDeviceController,CheckIn;CheckIn,TJvHidDeviceController;CheckIn}
+A{\footnote A TJvHidDeviceController_CheckIn;CheckIn_Method;CheckIn}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.CheckIn\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b procedure} CheckIn({\b var} HidDev: {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice});}\par
+Gibt ein ausgehändigtes {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}-Objekt dem TJvHidDeviceController zurück.\line
+Ein TJvHidDevice-Objekt sollte nach Gebrauch immer zurückgegeben werden. Die Datei-Handles des Objekts 
+werden geschlossen. 
+CheckIn weist HidDev {\b nil} zu, um ein weiteres Benutzen der Variable zu unterbinden.\line
+Als Alternative kann das Objekt auch mit Free zerstört werden. Der TJvHidDeviceController bemerkt dies 
+und erzeugt ein neues eingechecktes Objekt für das Gerät.\line
+Wird der TJvHidDeviceController zerstört, so werden alle ausgehändigten TJvHidDevice-Objekte in 
+den ausgesteckten Zustand versetzt. Entsprechend wird der {\uldb OnUnplug\v IDH_TJvHidDevice_OnUnplug>Main}-Event 
+für diese Objekte ausgelöst.
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_CheckOut}
+${\footnote $ TJvHidDeviceController.CheckOut}
+K{\footnote K TJvHidDeviceController,CheckOut;CheckOut,TJvHidDeviceController;CheckOut}
+A{\footnote A TJvHidDeviceController_CheckOut;CheckOut_Method;CheckOut}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.CheckOut\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} CheckOut({\b var} HidDev: {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}): Boolean;}\par
+Es wird das erste noch nicht ausgehändigte TJvHidDevice-Objekt herausgegeben.\line
+Der Rückgabewert ist True, falls noch ein Objekt vorhanden ist, sonst False und HidDev wird auf 
+{\b nil} gesetzt.
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_CheckOutByID}
+${\footnote $ TJvHidDeviceController.CheckOutByID}
+K{\footnote K TJvHidDeviceController,CheckOutByID;CheckOutByID,TJvHidDeviceController;CheckOutByID}
+A{\footnote A TJvHidDeviceController_CheckOutByID;CheckOutByID_Method;CheckOutByID}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.CheckOutByID\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} CheckOutByID({\b var} HidDev: {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}; {\b const} Vid, Pid: Integer): Boolean;}\par
+Es wird das erste noch nicht ausgehändigte TJvHidDevice-Objekt herausgegeben, dessen 
+VendorID und ProductID den Parametern entsprechen. Der Wert -1 für Pid matcht alle ProductIDs. 
+Dies ist ein anderer Wert als die größte mögliche ProductID $FFFF !\line
+Der Rückgabewert ist True, falls noch ein Objekt vorhanden ist, sonst False und HidDev wird auf 
+{\b nil} gesetzt.
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_CheckOutByClass}
+${\footnote $ TJvHidDeviceController.CheckOutByClass}
+K{\footnote K TJvHidDeviceController,CheckOutByClass;CheckOutByClass,TJvHidDeviceController;CheckOutByClass;cHidMouseClass;cHidKeyboardClass;cHidNoClass}
+A{\footnote A TJvHidDeviceController_CheckOutByClass;CheckOutByClass_Method;CheckOutByClass}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.CheckOutByClass\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} CheckOutByClass({\b var} HidDev: {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}; {\b const} ClassName: {\b string}): Boolean;}\par
+Es wird das erste noch nicht ausgehändigte TJvHidDevice-Objekt herausgegeben, dessen 
+Klassenname dem Parameter entspricht. 
+Der Klassenname ist ein benutzerlesbarer Text, der in der Registry unter 
+HKEY_LOCAL_MACHINE\\Enum\\HID\\...\\Class abgelegt ist.\line
+Der Rückgabewert ist True, falls noch ein Objekt vorhanden ist, sonst False und HidDev wird auf 
+{\b nil} gesetzt.\par
+Für ClassName sind drei Konstanten vordefiniert:\line
+{\f0   cHidMouseClass    = 'Mouse';}\line
+{\f0   cHidKeyboardClass = 'Keyboard';}\line
+{\f0   cHidNoClass       = 'HIDClass';}\line
+Die anderen möglichen Klassennamen sind unbekannt.
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_CheckOutByIndex}
+${\footnote $ TJvHidDeviceController.CheckOutByIndex}
+K{\footnote K TJvHidDeviceController,CheckOutByIndex;CheckOutByIndex,TJvHidDeviceController;CheckOutByIndex}
+A{\footnote A TJvHidDeviceController_CheckOutByIndex;CheckOutByIndex_Method;CheckOutByIndex}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.CheckOutByIndex\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} CheckOutByIndex({\b var} HidDev: {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}; {\b const} Idx: Integer): Boolean;}\par
+Es wird das TJvHidDevice-Objekt mit Index Idx herausgegeben, falls es noch nicht ausgehändigt ist. 
+Der Index zählt ab 0. 
+Der {\uldb OnEnumerate\v IDH_TJvHidDeviceController_OnEnumerate>Main}-Event 
+hat als Parameter den entsprechenden Index.\line
+Der Rückgabewert ist True, falls der Index innerhalb der Grenzen ist und das entsprechende Objekt 
+nicht ausgehändigt wurde, sonst False und HidDev wird auf {\b nil} gesetzt.\par
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_CheckOutByProductName}
+${\footnote $ TJvHidDeviceController.CheckOutByProductName}
+K{\footnote K TJvHidDeviceController,CheckOutByProductName;CheckOutByProductName,TJvHidDeviceController;CheckOutByProductName}
+A{\footnote A TJvHidDeviceController_CheckOutByProductName;CheckOutByProductName_Method;CheckOutByProductName}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.CheckOutByProductName\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} CheckOutByProductName({\b var} HidDev: {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}; ProductName: WideString): Boolean;}\par
+Es wird das erste noch nicht ausgehändigte TJvHidDevice-Objekt herausgegeben, dessen 
+ProductName dem Parameter entspricht.\line
+Der ProductName des Gerätes kann leer sein. Der Vergleich erfolgt auf den Unicode-Strings.\line
+Der Rückgabewert ist True, falls noch ein Objekt vorhanden ist, sonst False und HidDev wird auf 
+{\b nil} gesetzt.
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_CheckOutByVendorName}
+${\footnote $ TJvHidDeviceController.CheckOutByVendorName}
+K{\footnote K TJvHidDeviceController,CheckOutByVendorName;CheckOutByVendorName,TJvHidDeviceController;CheckOutByVendorName}
+A{\footnote A TJvHidDeviceController_CheckOutByVendorName;CheckOutByVendorName_Method;CheckOutByVendorName}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.CheckOutByVendorName\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} CheckOutByVendorName({\b var} HidDev: {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}; {\b const} VendorName: WideString): Boolean;}\par
+Es wird das erste noch nicht ausgehändigte TJvHidDevice-Objekt herausgegeben, dessen 
+VendorName dem Parameter entspricht.\line
+Der VendorName des Gerätes kann leer sein. Der Vergleich erfolgt auf den Unicode-Strings.\line
+Der Rückgabewert ist True, falls noch ein Objekt vorhanden ist, sonst False und HidDev wird auf 
+{\b nil} gesetzt.
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_CheckOutByCallback}
+${\footnote $ TJvHidDeviceController.CheckOutByCallback}
+K{\footnote K TJvHidDeviceController,CheckOutByCallback;CheckOutByCallback,TJvHidDeviceController;CheckOutByCallback}
+A{\footnote A TJvHidDeviceController_CheckOutByCallback;CheckOutByCallback_Method;CheckOutByCallback}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.CheckOutByCallback\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Declaration\b0\par
+{\f0 {\b function} CheckOutByCallback({\b var} HidDev: {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}; Check: {\uldb TJvHidCheckCallback\v IDH_Type_TJvHidCheckCallback}): Boolean;}\par
+Es wird das erste noch nicht ausgehändigte TJvHidDevice-Objekt herausgegeben, bei dem 
+die übergebene Funktion Check True liefert. Es werden nur eingecheckte Geräte-Objekte an Check übergeben.\line
+Der Rückgabewert ist True, falls noch ein Objekt vorhanden ist, sonst False und HidDev wird auf 
+{\b nil} gesetzt.
+\par\page
+
+#{\footnote # IDH_Type_TJvHidCheckCallback}
+${\footnote $ TJvHidCheckCallback}
+K{\footnote K TJvHidCheckCallback}
+A{\footnote A TJvHidCheckCallback_Type;TJvHidCheckCallback}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidCheckCallback\b0}   \line
+\par\pard}
+\b Declaration\b0\par
+{\f0 TJvHidCheckCallback = {\b function}({\b const} HidDev: TJvHidDevice): Boolean\par}
+Vom User übergebene Funktion um ein Gerät auszuchecken.
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_CountByID}
+${\footnote $ TJvHidDeviceController.CountByID}
+K{\footnote K TJvHidDeviceController,CountByID;CountByID,TJvHidDeviceController;CountByID}
+A{\footnote A TJvHidDeviceController_CountByID;CountByID_Method;CountByID}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.CountByID\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} CountByID({\b const} Vid, Pid: Integer): Integer;}\par
+Es wird die Anzahl der eingesteckten Geräte geliefert, deren VendorID und ProductID 
+den Parametern Vid und Pid entsprechen. Der Wert -1 für Pid matcht alle ProductIDs.
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_CountByClass}
+${\footnote $ TJvHidDeviceController.CountByClass}
+K{\footnote K TJvHidDeviceController,CountByClass;CountByClass,TJvHidDeviceController;CountByClass;cHidMouseClass;cHidKeyboardClass;cHidNoClass}
+A{\footnote A TJvHidDeviceController_CountByClass;CountByClass_Method;CountByClass}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.CountByClass\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} CountByClass({\b const} ClassName: {\b string}): Integer;}\par
+Es wird die Anzahl der eingesteckten Geräte geliefert, deren Klassenname 
+dem Parameter ClassName entspricht.\line
+Der Klassenname ist ein benutzerlesbarer Text, der in der Registry unter 
+HKEY_LOCAL_MACHINE\\Enum\\HID\\...\\Class abgelegt ist.\par
+Für ClassName sind drei Konstanten vordefiniert:\line
+{\f0   cHidMouseClass    = 'Mouse';}\line
+{\f0   cHidKeyboardClass = 'Keyboard';}\line
+{\f0   cHidNoClass       = 'HIDClass';}\line
+Die anderen möglichen Klassennamen sind unbekannt.
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_CountByProductName}
+${\footnote $ TJvHidDeviceController.CountByProductName}
+K{\footnote K TJvHidDeviceController,CountByProductName;CountByProductName,TJvHidDeviceController;CountByProductName}
+A{\footnote A TJvHidDeviceController_CountByProductName;CountByProductName_Method;CountByProductName}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.CountByProductName\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} CountByProductName({\b const} ProductName: WideString): Integer;}\par
+Es wird die Anzahl der eingesteckten Geräte geliefert, deren ProductName 
+dem Parameter ProductName entspricht.\line
+Der ProductName des Gerätes kann leer sein. Der Vergleich erfolgt auf den Unicode-Strings.
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_CountByVendorName}
+${\footnote $ TJvHidDeviceController.CountByVendorName}
+K{\footnote K TJvHidDeviceController,CountByVendorName;CountByVendorName,TJvHidDeviceController;CountByVendorName}
+A{\footnote A TJvHidDeviceController_CountByVendorName;CountByVendorName_Method;CountByVendorName}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.CountByVendorName\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} CountByVendorName({\b const} VendorName: WideString): Integer;}\par
+Es wird die Anzahl der eingesteckten Geräte geliefert, deren VendorName 
+dem Parameter VendorName entspricht.\line
+Der VendorName des Gerätes kann leer sein. Der Vergleich erfolgt auf den Unicode-Strings.
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_CountByCallback}
+${\footnote $ TJvHidDeviceController.CountByCallback}
+K{\footnote K TJvHidDeviceController,CountByCallback;CountByCallback,TJvHidDeviceController;CountByCallback}
+A{\footnote A TJvHidDeviceController_CountByCallback;CountByCallback_Method;CountByCallback}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.CountByCallback\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Declaration\b0\par
+{\f0 {\b function} CountByCallback(Check: {\uldb TJvHidCheckCallback\v IDH_Type_TJvHidCheckCallback}): Integer;}\par
+Es wird die Anzahl der eingesteckten Geräte geliefert, bei denen Check True liefert.
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_Create}
+${\footnote $ TJvHidDeviceController.Create}
+K{\footnote K TJvHidDeviceController,Create;Create,TJvHidDeviceController;Create}
+A{\footnote A TJvHidDeviceController_Create;Create_Method;Create}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.Create\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b constructor} Create(AOwner: TComponent); {\b override};}\par
+Es ist erlaubt, die Komponente abzuleiten und den Konstruktor zu überladen, aber 
+als erstes muss\line
+"{\f0 {\b inherited} Create(AOwner);}"\line
+aufgerufen werden, oder die Komponente wird nicht funktionieren.
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_DeviceChange}
+${\footnote $ TJvHidDeviceController.DeviceChange}
+K{\footnote K TJvHidDeviceController,DeviceChange;DeviceChange,TJvHidDeviceController;DeviceChange}
+A{\footnote A TJvHidDeviceController_DeviceChange;DeviceChange_Method;DeviceChange}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.DeviceChange\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b procedure} DeviceChange;}\par
+Die Methode implementiert den {\uldb OnDeviceChange\v IDH_TJvHidDeviceController_OnDeviceChange>Main}
+-Event. Sie ist {\b published} um den Aufruf zur Design-Zeit zu erlauben.
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_Destroy}
+${\footnote $ TJvHidDeviceController.Destroy}
+K{\footnote K TJvHidDeviceController,Destroy;Destroy,TJvHidDeviceController;Destroy}
+A{\footnote A TJvHidDeviceController_Destroy;Destroy_Method;Destroy}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.Destroy\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b destructor} Destroy; {\b override};}\par
+Der Destruktor darf in abgeleiteten Komponenten überladen werden, aber es muss\line 
+"{\f0 {\b inherited} Destroy;}"\line
+aufgerufen werden, oder die Verwaltung der Komponente versagt.
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_Enumerate}
+${\footnote $ TJvHidDeviceController.Enumerate}
+K{\footnote K TJvHidDeviceController,Enumerate;Enumerate,TJvHidDeviceController;Enumerate}
+A{\footnote A TJvHidDeviceController_Enumerate;Enumerate_Method;Enumerate}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.Enumerate\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b function} Enumerate: Integer;}\par
+Der Aufruf der Enumerate-Methode löst einen {\uldb OnEnumerate\v IDH_TJvHidDeviceController_OnEnumerate>Main}
+-Event für jedes Objekt in der Liste des TJvHidDeviceControllers aus. Dies ist der einzige Weg, einen 
+OnEnumerate-Event zu erhalten. Alle Elemente der Liste, ob eingesteckt oder nicht, werden bedacht.\line
+Gibt der OnEnumerate-Event False zurück, so wird die Aufzählung abgebrochen.
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_HidVersion}
+${\footnote $ TJvHidDeviceController.HidVersion}
+K{\footnote K TJvHidDeviceController,HidVersion;HidVersion,TJvHidDeviceController;HidVersion}
+A{\footnote A TJvHidDeviceController_HidVersion;HidVersion_Method;HidVersion}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.HidVersion\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 {\b class function} HidVersion: {\b string};}\par
+Es wird der Versions-String der HID.DLL geliefert. Die Methode ist eine Klassenfunktion, 
+um den Aufruf auch ohne instanziierte Komponente zu ermöglichen.\line
+Beispielaufruf:\par
+{\f0   ShowMessage(TJvHidDeviceController.HidVersion);}
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_OnArrival}
+${\footnote $ TJvHidDeviceController.OnArrival}
+K{\footnote K TJvHidDeviceController,OnArrival;OnArrival,TJvHidDeviceController;OnArrival}
+A{\footnote A TJvHidDeviceController_OnArrival;OnArrival_Event;OnArrival}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.OnArrival\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Declaration\b0\par
+{\f0 TJvHidPlugEvent = {\b procedure}(HidDev: {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}) {\b of} {\b object};}\par
+Der TJvHidDeviceController feuert diesen Event, falls ein HID-Gerät eingesteckt wird. 
+Es folgt immer ein {\uldb OnDeviceChange\v IDH_TJvHidDeviceController_OnDeviceChange>Main} Event. 
+Während des Events ist das Gerät zugreifbar.
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_OnDeviceChange}
+${\footnote $ TJvHidDeviceController.OnDeviceChange}
+K{\footnote K TJvHidDeviceController,OnDeviceChange;OnDeviceChange,TJvHidDeviceController;OnDeviceChange}
+A{\footnote A TJvHidDeviceController_OnDeviceChange;OnDeviceChange_Event;OnDeviceChange}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.OnDeviceChange\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 TNotifyEvent = {\b procedure}(Sender: TObject) {\b of object};}\par
+Der TJvHidDeviceController feuert diesen Event, falls ein HID-Gerät ein- oder ausgesteckt wird. 
+Der Event wird auch ausgelöst, wenn OnDeviceChange das erste Mal zugewiesen wird. Das geschieht 
+automatisch, falls der Event zur Design-Zeit zugewiesen wurde. Dies simuliert das Einstecken 
+aller Geräte, die zm Zeitpunkt des Programmstarts bereits eingesteckt waren.\line
+Üblicherweise sollte man ein {\uldb Enumerate\v IDH_TJvHidDeviceController_Enumerate>Main} aufrufen, 
+um nach neuen Geräten zu suchen. Sender ist natürlich die TJvHidDeviceController-Komponente selbst.
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_OnDeviceData}
+${\footnote $ TJvHidDeviceController.OnDeviceData}
+K{\footnote K TJvHidDeviceController,OnDeviceData;OnDeviceData,TJvHidDeviceController;OnDeviceData}
+A{\footnote A TJvHidDeviceController_OnDeviceData;OnDeviceData_Event;OnDeviceData}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.OnDeviceData\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 TJvHidDataEvent = {\b procedure}({\b const} HidDev: {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}; ReportID: Byte; 
+{\b const} Data: Pointer; Size: Word) {\b of} {\b object};}\par
+Dieser Event ist nicht für den TJvHidDeviceController, sondern wird auf den {\uldb OnData\v IDH_TJvHidDevice_OnData>Main} 
+der verwalteten TJvHidDevice-Objekte übertragen. Dies erlaubt es den OnData-Event aller TJvHidDevice-Objekte zur 
+Design-Zeit zu setzen.\line
+Wird OnDeviceData zur Laufzeit gesetzt, so werden nur die TJvHidDevice-Objekte zugewiesen, deren OnData den 
+gleichen Wert wie der vorher gültige OnDeviceData hat. Damit bleiben alle Objekte unverändert, deren 
+OnData individuell geändert wurde.
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_OnDeviceDataError}
+${\footnote $ TJvHidDeviceController.OnDeviceDataError}
+K{\footnote K TJvHidDeviceController,OnDeviceDataError;OnDeviceDataError,TJvHidDeviceController;OnDeviceDataError}
+A{\footnote A TJvHidDeviceController_OnDeviceDataError;OnDeviceDataError_Event;OnDeviceDataError}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.OnDeviceDataError\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 TJvDataErrorEvent = {\b procedure}({\b const} HidDev: {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}, 
+Error: DWORD) {\b of} {\b object};}\par
+Dieser Event ist nicht für den TJvHidDeviceController, sondern wird auf den {\uldb OnDataError\v IDH_TJvHidDevice_OnDataError>Main} 
+der verwalteten TJvHidDevice-Objekte übertragen. Dies erlaubt es den OnDataError-Event aller TJvHidDevice-Objekte zur 
+Design-Zeit zu setzen.\line
+Wird OnDeviceDataError zur Laufzeit gesetzt, so werden nur die TJvHidDevice-Objekte zugewiesen, deren OnDataError den 
+gleichen Wert wie der vorher gültige OnDeviceDataError hat. Damit bleiben alle Objekte unverändert, deren 
+OnDataError individuell geändert wurde.
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_OnDeviceUnplug}
+${\footnote $ TJvHidDeviceController.OnDeviceUnplug}
+K{\footnote K TJvHidDeviceController,OnDeviceUnplug;OnDeviceUnplug,TJvHidDeviceController;OnDeviceUnplug}
+A{\footnote A TJvHidDeviceController_OnDeviceUnplug;OnDeviceUnplug_Event;OnDeviceUnplug}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.OnDeviceUnplug\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 TJvHidUnplugEvent = {\b procedure}({\b const} HidDev: {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}) {\b of} {\b object};}\par
+Dieser Event ist nicht für den TJvHidDeviceController, sondern wird auf den {\uldb OnUnplug\v IDH_TJvHidDevice_OnUnplug>Main} 
+der verwalteten TJvHidDevice-Objekte übertragen. Dies erlaubt es den OnUnplug-Event aller TJvHidDevice-Objekte zur 
+Design-Zeit zu setzen.\line
+Wird OnDeviceUnplug zur Laufzeit gesetzt, so werden nur die TJvHidDevice-Objekte zugewiesen, deren OnUnplug den 
+gleichen Wert wie der vorher gültige OnDeviceUnplug hat. Damit bleiben alle Objekte unverändert, deren 
+OnUnplug individuell geändert wurde.
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_OnEnumerate}
+${\footnote $ TJvHidDeviceController.OnEnumerate}
+K{\footnote K TJvHidDeviceController,OnEnumerate;OnEnumerate,TJvHidDeviceController;OnEnumerate}
+A{\footnote A TJvHidDeviceController_OnEnumerate;OnEnumerate_Event;OnEnumerate}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.OnEnumerate\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Deklaration\b0\par
+{\f0 TJvHidEnumerateEvent = {\b function}({\b const} HidDev: {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}; {\b const} Idx: Integer): Boolean {\b of object};}\par
+Der OnEnumerate-Event wird für alle TJvHidDevice-Objekte als Antwort auf den Aufruf der Methode 
+{\uldb Enumerate\v IDH_TJvHidDeviceController_Enumerate>Main} aufgerufen. 
+Der Rückgabewert False stoppt den Aufzählungsprozess.\line
+Es werden alle TJvHidDevice-Objekte aufgezählt, ob eingesteckt oder nicht. 
+Es ist explizit erlaubt, ein TJvHidDevice-Objekt im Event auszuchecken. 
+Damit lassen sich auch andere als die vorgefertigten Auscheck-Methoden implementieren. 
+Der Index Idx ist für den Aufruf von {\uldb CheckOutByIndex\v IDH_TJvHidDeviceController_CheckOutByIndex>Main} 
+vorgesehen.\par
+Die Methoden des HidDev-Gerätes funktionieren, obwohl es eingecheckt sein kann. 
+Ausserhalb des OnEnumerate-Events sind die Datei-Handles eingecheckter Objekte geschlossen und 
+die Methoden versagen wie bei einem ausgesteckten Gerät.
+\par\page
+
+#{\footnote # IDH_TJvHidDeviceController_OnRemoval}
+${\footnote $ TJvHidDeviceController.OnRemoval}
+K{\footnote K TJvHidDeviceController,OnRemoval;OnRemoval,TJvHidDeviceController;OnRemoval}
+A{\footnote A TJvHidDeviceController_OnRemoval;OnRemoval_Event;OnRemoval}
+>{\footnote > main}
++{\footnote + Auto}
+\sa50\sb50{\keepn{\uldb \{bml usb.bmp\}\v Robert_Marquardt}{\fs24\cf2\b TJvHidDeviceController.OnRemoval\b0}\line
+{\fs20    {\uldb TJvHidDeviceController\v IDH_Class_TJvHidDeviceController}   }\par\pard}
+\b Declaration\b0\par
+{\f0 TJvHidUnplugEvent = {\b procedure}(HidDev: {\uldb TJvHidDevice\v IDH_Class_TJvHidDevice}) {\b of} {\b object};}\par
+Der TJvHidDeviceController feuert diesen Event, falls ein HID-Gerät ausgesteckt wird. 
+Es folgt immer ein {\uldb OnDeviceChange\v IDH_TJvHidDeviceController_OnDeviceChange>Main} Event. 
+Der gleiche Event wird auch als {\uldb OnUnplug\v IDH_TJvHidDevice_OnUnplug>Main} ausgelöst, 
+aber für das Gerät nicht den Controller.\line
+\par\page
+
+#{\footnote # IDH_Anym_3FAMT_1}
+\sa50\sb50
+{\f1\fs20\b Hierarchie\b0\par
+TObject\line
+      |\line
+{\cf2 TJvHidDevice}\line
+\line
+\b Unterklassen\b0\line
+ Keine}\par\page
+
+#{\footnote # IDH_Anym_3FAMT_2}
+\sa50\sb50{\f1\fs20\b Hierarchie\b0\par
+TComponent\line
+      |\line
+{\cf2 TJvHidDeviceController}\line
+\line
+\b Unterklassen\b0\line
+ Keine}\par\page
+
+#{\footnote # IDH_Legend}
+\sa50\sb50
+{\f1\fs20\b Scope\b0\line
+\{bmct Published.bmp\}\tab Published\par
+\b Zugriff\b0\line
+\{bmct readonly.bmp\}\tab Read-only
+}\par\page
+}

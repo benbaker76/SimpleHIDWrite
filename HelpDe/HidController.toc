@@ -1,0 +1,11 @@
+:BASE HidController.hlp>main
+:TITLE kompletter Zugriff auf HID
+;
+1 HID API
+2 Zugriff auf HID-Geräte
+3 HID = IDH_Library_HID
+2 HID Objekte
+3 TJvHidDeviceController=IDH_Class_TJvHidDeviceController
+3 TJvHidDevice=IDH_Class_TJvHidDevice
+2 Über den Autor
+3 Robert Marquardt = Robert_Marquardt

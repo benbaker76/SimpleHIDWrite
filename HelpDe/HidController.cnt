@@ -1,0 +1,10 @@
+:Base HidController.hlp>main
+:Title kompletter Zugriff auf HID
+
+; Link section
+;=============
+:INCLUDE DELPHI4.cfg
+
+; CNT section
+;============
+:INCLUDE HidController.TOC

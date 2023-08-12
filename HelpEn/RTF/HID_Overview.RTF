@@ -1,0 +1,37 @@
+{\rtf1\ansi{\fonttbl{\f0\fswiss Courier New;}{\f1\fswiss Arial;}{\f2\fswiss Wingdings;}{\f3\fswiss MS Sans Serif;}}{\colortbl\red0\green0\blue196;\red0\green0\blue255;}\sa50\sb50\f3\fs20
+#{\footnote # Robert_Marquardt}
+${\footnote $ Robert Marquardt}
+>{\footnote > main}
+\sa50\sb50
+{\keepn{\{bml usb.bmp\}\f1\fs28\cf1\b   Author of HID component\b0}\par\pard}
+\{bmr Robert.bmp\}
+{\fs24\b Robert Martin Marquardt\b0\line\line
+born on 1 Februar 1961\line
+living in Berlin, Germany\line
+single, without children\line
+member of Project JEDI since end of 1999 (http://delphi-jedi.org)}
+\par\page
+
+#{\footnote # IDH_Library_HID}
+${\footnote $ HID - Overview}
+>{\footnote > main}
+\sa50\sb50
+{\keepn{\{bml usb.bmp\}\f1\fs28\cf1\b   Human Interface Device component\b0}\par\pard}
+The HID component gives you complete access to all HID devices of Windows 98, 98 SE, 98 ME, Windows 2000 and XP.\line
+A HID device is a USB device which you can interact with. Most of the USB devices are HID. 
+Keyboard, mice or scanners are definitely HID. A USB Hub is not HID. 
+There is no need to touch it to make it work. 
+Some non USB devices are added to HID by a legacy driver.\par
+
+The main feature of USB is the hotplugging of the devices. Consequently the HID component 
+is a controller component which handles all the HID device plugs and unplugs. 
+You will therefore only need a single instance of 
+the {\uldb HID component\v IDH_Class_TJvHidDeviceController} in your program. 
+Each individual HID device is represented by an instance of a HID device object. 
+The HID controller holds a list of all HID device objects. 
+When a HID device is plugged Windows sends a WM_DEVICECHANGE message. 
+The HID component catches this event and adds a new instance of a HID device object 
+to its list of HID devices.\par
+
+Now you can ask the HID component to hand out one of its {\uldb HID device objects\v IDH_Class_TJvHidDevice}. With this HID device object you can then access the individual device. When you are finished with the device hand back the HID device object to the HID component.\page
+}

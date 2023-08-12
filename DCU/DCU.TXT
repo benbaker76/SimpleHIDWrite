@@ -1,0 +1,2 @@
+The HID component and the demos place their DCU files here.
+Do not forget to include this directory into the Delphi library path.
